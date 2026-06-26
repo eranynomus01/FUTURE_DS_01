@@ -1,0 +1,422 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NexusRetail Sales Analytics Dashboard</title>
+    <!-- Google Fonts: Outfit -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <!-- FontAwesome for Premium Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Chart.js CDN -->
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="app-container">
+        <!-- Sidebar Navigation -->
+        <aside class="sidebar">
+            <div class="brand">
+                <div class="brand-logo">
+                    <i class="fa-solid fa-chart-line-up"></i>
+                    <span>NEXUS<span class="highlight">RETAIL</span></span>
+                </div>
+            </div>
+            <nav class="sidebar-nav">
+                <ul>
+                    <li class="active" data-tab="overview"><a href="#"><i class="fa-solid fa-chart-pie"></i> Overview</a></li>
+                    <li data-tab="products"><a href="#"><i class="fa-solid fa-box-open"></i> Products</a></li>
+                    <li data-tab="regions"><a href="#"><i class="fa-solid fa-map-location-dot"></i> Regions & Segments</a></li>
+                    <li data-tab="explorer"><a href="#"><i class="fa-solid fa-database"></i> Data Explorer</a></li>
+                    <li data-tab="insights"><a href="#"><i class="fa-solid fa-lightbulb"></i> Insights & Strategy</a></li>
+                </ul>
+            </nav>
+            <div class="sidebar-footer">
+                <div class="user-profile">
+                    <div class="avatar"><i class="fa-solid fa-user-tie"></i></div>
+                    <div class="user-info">
+                        <span class="user-name">Executive Suite</span>
+                        <span class="user-role">Strategic Analyst</span>
+                    </div>
+                </div>
+            </div>
+        </aside>
+
+        <!-- Main Content Area -->
+        <main class="main-content">
+            <!-- Top Navigation / Header -->
+            <header class="header">
+                <div class="header-left">
+                    <h1>Enterprise Sales Intelligence</h1>
+                    <p class="subtitle">Performance analysis, trend modeling, and growth recommendations</p>
+                </div>
+                
+                <!-- Dynamic Filters Panel -->
+                <div class="filters-panel">
+                    <div class="filter-item">
+                        <label for="filter-year"><i class="fa-regular fa-calendar"></i> Year</label>
+                        <select id="filter-year">
+                            <option value="all">All Years</option>
+                            <option value="2023">2023</option>
+                            <option value="2024">2024</option>
+                            <option value="2025">2025</option>
+                        </select>
+                    </div>
+                    <div class="filter-item">
+                        <label for="filter-region"><i class="fa-solid fa-globe"></i> Region</label>
+                        <select id="filter-region">
+                            <option value="all">All Regions</option>
+                            <option value="East">East</option>
+                            <option value="West">West</option>
+                            <option value="Central">Central</option>
+                            <option value="South">South</option>
+                        </select>
+                    </div>
+                    <div class="filter-item">
+                        <label for="filter-category"><i class="fa-solid fa-layer-group"></i> Category</label>
+                        <select id="filter-category">
+                            <option value="all">All Categories</option>
+                            <option value="Technology">Technology</option>
+                            <option value="Furniture">Furniture</option>
+                            <option value="Office Supplies">Office Supplies</option>
+                        </select>
+                    </div>
+                    <button id="reset-filters" class="btn-reset" title="Reset Filters">
+                        <i class="fa-solid fa-rotate-left"></i>
+                    </button>
+                </div>
+            </header>
+
+            <!-- Dashboard Tabs -->
+            
+            <!-- TAB 1: OVERVIEW -->
+            <section id="tab-overview" class="tab-content active">
+                <!-- KPI Scorecard -->
+                <div class="kpi-grid">
+                    <div class="kpi-card" id="kpi-sales">
+                        <div class="kpi-header">
+                            <span class="kpi-title">Total Revenue</span>
+                            <div class="kpi-icon sales"><i class="fa-solid fa-dollar-sign"></i></div>
+                        </div>
+                        <div class="kpi-value">$0.00</div>
+                        <div class="kpi-footer">
+                            <span class="trend positive"><i class="fa-solid fa-arrow-trend-up"></i> +12.4%</span>
+                            <span class="label">vs baseline</span>
+                        </div>
+                        <div class="glow-effect"></div>
+                    </div>
+                    
+                    <div class="kpi-card" id="kpi-profit">
+                        <div class="kpi-header">
+                            <span class="kpi-title">Net Profit</span>
+                            <div class="kpi-icon profit"><i class="fa-solid fa-sack-dollar"></i></div>
+                        </div>
+                        <div class="kpi-value">$0.00</div>
+                        <div class="kpi-footer">
+                            <span class="trend positive"><i class="fa-solid fa-arrow-trend-up"></i> +8.2%</span>
+                            <span class="label">vs baseline</span>
+                        </div>
+                        <div class="glow-effect"></div>
+                    </div>
+
+                    <div class="kpi-card" id="kpi-margin">
+                        <div class="kpi-header">
+                            <span class="kpi-title">Profit Margin</span>
+                            <div class="kpi-icon margin"><i class="fa-solid fa-percentage"></i></div>
+                        </div>
+                        <div class="kpi-value">0.00%</div>
+                        <div class="kpi-footer">
+                            <span class="trend neutral"><i class="fa-solid fa-minus"></i> Stable</span>
+                            <span class="label">target: 25.0%</span>
+                        </div>
+                        <div class="glow-effect"></div>
+                    </div>
+
+                    <div class="kpi-card" id="kpi-orders">
+                        <div class="kpi-header">
+                            <span class="kpi-title">Total Orders</span>
+                            <div class="kpi-icon orders"><i class="fa-solid fa-cart-shopping"></i></div>
+                        </div>
+                        <div class="kpi-value">0</div>
+                        <div class="kpi-footer">
+                            <span class="trend positive"><i class="fa-solid fa-arrow-trend-up"></i> +15.1%</span>
+                            <span class="label">transactions</span>
+                        </div>
+                        <div class="glow-effect"></div>
+                    </div>
+                </div>
+
+                <!-- Primary Analytical Charts -->
+                <div class="chart-row primary-row">
+                    <!-- Trend Chart -->
+                    <div class="chart-card glass-panel flex-2">
+                        <div class="card-header">
+                            <h2>Revenue & Profit Growth Trend</h2>
+                            <p class="card-desc">Monthly aggregation of sales and profit margins over time</p>
+                        </div>
+                        <div class="chart-container">
+                            <canvas id="chart-trends"></canvas>
+                        </div>
+                    </div>
+                    
+                    <!-- Regional Shares -->
+                    <div class="chart-card glass-panel flex-1">
+                        <div class="card-header">
+                            <h2>Regional Distribution</h2>
+                            <p class="card-desc">Contribution of geographic markets to total revenue</p>
+                        </div>
+                        <div class="chart-container donut">
+                            <canvas id="chart-regional"></canvas>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Secondary Row -->
+                <div class="chart-row secondary-row">
+                    <!-- Category Overview -->
+                    <div class="chart-card glass-panel flex-1">
+                        <div class="card-header">
+                            <h2>Category Performance</h2>
+                            <p class="card-desc">Sales vs Profit breakdown by main product category</p>
+                        </div>
+                        <div class="chart-container">
+                            <canvas id="chart-categories"></canvas>
+                        </div>
+                    </div>
+
+                    <!-- Customer Segment -->
+                    <div class="chart-card glass-panel flex-1">
+                        <div class="card-header">
+                            <h2>Customer Segments</h2>
+                            <p class="card-desc">Revenue distribution across customer profiles</p>
+                        </div>
+                        <div class="chart-container">
+                            <canvas id="chart-segments"></canvas>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- TAB 2: PRODUCTS -->
+            <section id="tab-products" class="tab-content">
+                <div class="chart-row primary-row">
+                    <!-- Top Products Table -->
+                    <div class="chart-card glass-panel flex-3">
+                        <div class="card-header">
+                            <h2>Top Performing Products</h2>
+                            <p class="card-desc">Top 15 items ranked by total revenue contribution</p>
+                        </div>
+                        <div class="table-container header-sticky">
+                            <table class="data-table" id="table-top-products">
+                                <thead>
+                                    <tr>
+                                        <th>Product Name</th>
+                                        <th>Category</th>
+                                        <th>Sub-Category</th>
+                                        <th class="num-col">Qty Sold</th>
+                                        <th class="num-col">Sales ($)</th>
+                                        <th class="num-col">Profit ($)</th>
+                                        <th class="num-col">Margin (%)</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <!-- Dynamic content -->
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+
+                    <!-- Sub-Category Efficiency -->
+                    <div class="chart-card glass-panel flex-2">
+                        <div class="card-header">
+                            <h2>Sub-Category Analysis</h2>
+                            <p class="card-desc">Profit margins by product sub-category</p>
+                        </div>
+                        <div class="chart-container large-bar">
+                            <canvas id="chart-subcategories"></canvas>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- TAB 3: REGIONS & SEGMENTS -->
+            <section id="tab-regions" class="tab-content">
+                <div class="chart-row primary-row">
+                    <!-- Regional Details Grid -->
+                    <div class="chart-card glass-panel flex-1">
+                        <div class="card-header">
+                            <h2>Region Financial Summary</h2>
+                            <p class="card-desc">Key metrics compiled by region</p>
+                        </div>
+                        <div class="regional-cards-container" id="regional-metrics-container">
+                            <!-- Dynamic Cards -->
+                        </div>
+                    </div>
+
+                    <!-- Top States/Cities -->
+                    <div class="chart-card glass-panel flex-1">
+                        <div class="card-header">
+                            <h2>Top Regional Markets</h2>
+                            <p class="card-desc">Top performing states and cities by sales</p>
+                        </div>
+                        <div class="chart-container">
+                            <canvas id="chart-top-states"></canvas>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- TAB 4: DATA EXPLORER -->
+            <section id="tab-explorer" class="tab-content">
+                <div class="glass-panel search-panel">
+                    <div class="explorer-toolbar">
+                        <div class="search-box">
+                            <i class="fa-solid fa-magnifying-glass"></i>
+                            <input type="text" id="explorer-search" placeholder="Search orders, customers, products, states...">
+                        </div>
+                        <div class="toolbar-stats">
+                            Showing <span id="explorer-row-count">0</span> records
+                        </div>
+                    </div>
+                    
+                    <div class="table-container main-explorer-table-container">
+                        <table class="data-table" id="table-explorer">
+                            <thead>
+                                <tr>
+                                    <th data-sort="order_id" class="sortable">Order ID <i class="fa-solid fa-sort"></i></th>
+                                    <th data-sort="order_date" class="sortable">Date <i class="fa-solid fa-sort"></i></th>
+                                    <th>Customer</th>
+                                    <th>Segment</th>
+                                    <th>Geography</th>
+                                    <th>Category</th>
+                                    <th>Product Name</th>
+                                    <th class="num-col" data-sort="sales" class="sortable">Sales <i class="fa-solid fa-sort"></i></th>
+                                    <th class="num-col" data-sort="quantity" class="sortable">Qty <i class="fa-solid fa-sort"></i></th>
+                                    <th class="num-col" data-sort="discount" class="sortable">Discount <i class="fa-solid fa-sort"></i></th>
+                                    <th class="num-col" data-sort="profit" class="sortable">Profit <i class="fa-solid fa-sort"></i></th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <!-- Dynamic transactions -->
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </section>
+
+            <!-- TAB 5: INSIGHTS & STRATEGY -->
+            <section id="tab-insights" class="tab-content">
+                <div class="insights-grid">
+                    <!-- Exec Summary -->
+                    <div class="glass-panel insight-card span-all">
+                        <div class="insight-header">
+                            <i class="fa-solid fa-gem text-accent-cyan"></i>
+                            <h2>Executive Performance Summary</h2>
+                        </div>
+                        <div class="insight-body">
+                            <p>An in-depth review of the cleaned and reconciled enterprise sales data shows robust top-line momentum across the three-year period (2023–2025). The business generated a healthy overall profit margin of <strong>24.73%</strong>. However, there are significant performance disparities across product categories, pricing models, and regional execution that represent massive unlocked profit potential.</p>
+                            <div class="summary-stats-bullets">
+                                <div class="bullet-stat">
+                                    <span class="bullet-val text-accent-cyan" id="insight-stat-sales">$0.0M</span>
+                                    <span class="bullet-lbl">Total Sales Reconciled</span>
+                                </div>
+                                <div class="bullet-stat">
+                                    <span class="bullet-val text-accent-green" id="insight-stat-profit">$0.0M</span>
+                                    <span class="bullet-lbl">Total Net Profit</span>
+                                </div>
+                                <div class="bullet-stat">
+                                    <span class="bullet-val text-accent-amber" id="insight-stat-margin">0.0%</span>
+                                    <span class="bullet-lbl">Net Profit Margin</span>
+                                </div>
+                                <div class="bullet-stat">
+                                    <span class="bullet-val" id="insight-stat-orders">0,000</span>
+                                    <span class="bullet-lbl">Unique Transactions</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Insight 1: Category -->
+                    <div class="glass-panel insight-card">
+                        <div class="insight-header">
+                            <i class="fa-solid fa-dolly text-accent-cyan"></i>
+                            <h2>Category & Product Insights</h2>
+                        </div>
+                        <div class="insight-body">
+                            <h3>High-margin Office Supplies vs. Volume Drivers</h3>
+                            <p><strong>Office Supplies</strong> exhibits the highest unit profitability, with sub-categories like <strong>Binders</strong> (60% margin) and <strong>Art</strong> (45% margin) representing highly efficient cash generators. While their unit prices are lower, they constitute a critical anchor for bottom-line stability.</p>
+                            
+                            <h3>The Furniture Conundrum</h3>
+                            <p><strong>Furniture</strong> (specifically Tables and Bookcases) represents a major drag on business margins. Tables generate high revenue but function on a razor-thin 8% base margin. Combined with high shipping costs and aggressive customer discounting, Tables frequently operate at a net loss. Technology remains the largest overall revenue contributor, led by premium Phones, operating with strong margins (25%).</p>
+                        </div>
+                    </div>
+
+                    <!-- Insight 2: Regional -->
+                    <div class="glass-panel insight-card">
+                        <div class="insight-header">
+                            <i class="fa-solid fa-map-location-dot"></i>
+                            <h2>Regional & Segment Insights</h2>
+                        </div>
+                        <div class="insight-body">
+                            <h3>Western Leadership & Central Challenges</h3>
+                            <p>The <strong>West</strong> region represents the most lucrative market, driven by California's high tech adoption and large customer base. The West combines high sales volumes with solid margins.</p>
+                            <p>In contrast, the <strong>Central</strong> region shows weaker relative performance. High promotional discounting in states like Ohio and Texas has eroded margins, indicating that sales team incentives may be overly aligned to raw revenue rather than profitability metrics.</p>
+                            
+                            <h3>Segment Stability</h3>
+                            <p>The <strong>Consumer</strong> and <strong>Corporate</strong> segments generate over 80% of total revenue. Corporate sales show the highest stability and larger order sizes, while Home Office is the fastest-growing segment, showing an upward trajectory in 2025.</p>
+                        </div>
+                    </div>
+
+                    <!-- Recommendations -->
+                    <div class="glass-panel insight-card span-all strategic-card">
+                        <div class="insight-header">
+                            <i class="fa-solid fa-bullseye text-accent-amber"></i>
+                            <h2>Strategic Business Recommendations</h2>
+                        </div>
+                        <div class="recommendations-container">
+                            <div class="rec-item">
+                                <div class="rec-icon"><i class="fa-solid fa-tags"></i></div>
+                                <div class="rec-details">
+                                    <h3>1. Implement Smart Discount Thresholds</h3>
+                                    <p>Our analysis shows that discounts exceeding 20% dramatically drop net profit margins into negative territory, especially in the Furniture category. We recommend establishing a hard cap of <strong>20% discount</strong> for Furniture products without executive VP approval, and shifting promotional focus to bundle deals on high-margin Office Supplies (Binders, Accessories).</p>
+                                </div>
+                            </div>
+                            
+                            <div class="rec-item">
+                                <div class="rec-icon"><i class="fa-solid fa-truck-ramp-box"></i></div>
+                                <div class="rec-details">
+                                    <h3>2. Rationalize the Tables & Bookcases Portfolio</h3>
+                                    <p>Tables contribute 8% margin which is unsustainable given fulfillment and shipping complexities. The business should adjust pricing lists upward by 10-12% on low-margin furniture and transition to a "Ship-to-Store" or flat-rate shipping surcharge model to insulate margins from heavy freight costs.</p>
+                                </div>
+                            </div>
+
+                            <div class="rec-item">
+                                <div class="rec-icon"><i class="fa-solid fa-award"></i></div>
+                                <div class="rec-details">
+                                    <h3>3. Refocus Central Region Sales Incentives</h3>
+                                    <p>Establish a profitability-based commission structure for sales representatives in the Central region (especially Texas and Ohio) instead of revenue-based commissions. This will naturally discourage reps from offering margin-killing discounts to close deals.</p>
+                                </div>
+                            </div>
+
+                            <div class="rec-item">
+                                <div class="rec-icon"><i class="fa-solid fa-rocket"></i></div>
+                                <div class="rec-details">
+                                    <h3>4. Capitalize on the Home Office Segment</h3>
+                                    <p>With remote work stabilizing, the Home Office segment exhibits high average basket values. Launch targeted marketing campaigns for ergonomic workstations (Chairs, LED Desk Lamps, and Tech Accessories) tailored to remote professionals, bundling them for higher average order value.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+    </div>
+
+    <!-- Load the generated data file first -->
+    <script src="data.js"></script>
+    <!-- Load dashboard application logic -->
+    <script src="app.js"></script>
+</body>
+</html>

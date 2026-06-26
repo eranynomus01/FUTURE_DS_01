@@ -1,0 +1,117 @@
+{
+    "Office Supplies": {
+        "sales": 519829.89,
+        "profit": 92100.87,
+        "quantity": 9374,
+        "margin": 0.1772,
+        "sub_categories": [
+            {
+                "sub_category": "Appliances",
+                "sales": 360821.31,
+                "profit": 48362.91,
+                "quantity": 2171,
+                "margin": 0.134
+            },
+            {
+                "sub_category": "Art",
+                "sales": 46648.43,
+                "profit": 18962.5,
+                "quantity": 1950,
+                "margin": 0.4065
+            },
+            {
+                "sub_category": "Binders",
+                "sales": 10669.32,
+                "profit": 5953.09,
+                "quantity": 1721,
+                "margin": 0.558
+            },
+            {
+                "sub_category": "Paper",
+                "sales": 30867.01,
+                "profit": 8005.11,
+                "quantity": 1693,
+                "margin": 0.2593
+            },
+            {
+                "sub_category": "Storage",
+                "sales": 70823.82,
+                "profit": 10817.26,
+                "quantity": 1839,
+                "margin": 0.1527
+            }
+        ]
+    },
+    "Technology": {
+        "sales": 5624313.89,
+        "profit": 1304303.59,
+        "quantity": 9235,
+        "margin": 0.2319,
+        "sub_categories": [
+            {
+                "sub_category": "Accessories",
+                "sales": 170596.1,
+                "profit": 69207.32,
+                "quantity": 2200,
+                "margin": 0.4057
+            },
+            {
+                "sub_category": "Copiers",
+                "sales": 2851442.59,
+                "profit": 740944.86,
+                "quantity": 2333,
+                "margin": 0.2598
+            },
+            {
+                "sub_category": "Machines",
+                "sales": 818756.9,
+                "profit": 129331.62,
+                "quantity": 2412,
+                "margin": 0.158
+            },
+            {
+                "sub_category": "Phones",
+                "sales": 1783518.3,
+                "profit": 364819.79,
+                "quantity": 2290,
+                "margin": 0.2046
+            }
+        ]
+    },
+    "Furniture": {
+        "sales": 2735947.59,
+        "profit": 185013.43,
+        "quantity": 9110,
+        "margin": 0.0676,
+        "sub_categories": [
+            {
+                "sub_category": "Bookcases",
+                "sales": 210086.57,
+                "profit": 11640.73,
+                "quantity": 2251,
+                "margin": 0.0554
+            },
+            {
+                "sub_category": "Chairs",
+                "sales": 1423056.61,
+                "profit": 101496.26,
+                "quantity": 2280,
+                "margin": 0.0713
+            },
+            {
+                "sub_category": "Furnishings",
+                "sales": 116343.16,
+                "profit": 35246.15,
+                "quantity": 2259,
+                "margin": 0.3029
+            },
+            {
+                "sub_category": "Tables",
+                "sales": 986461.25,
+                "profit": 36630.29,
+                "quantity": 2320,
+                "margin": 0.0371
+            }
+        ]
+    }
+}

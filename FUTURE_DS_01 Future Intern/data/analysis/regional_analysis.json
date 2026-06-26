@@ -1,0 +1,94 @@
+{
+    "Central": {
+        "sales": 2375031.65,
+        "profit": 429076.6,
+        "quantity": 7172,
+        "margin": 0.1807,
+        "top_states": [
+            {
+                "state": "Texas",
+                "sales": 1460505.81,
+                "profit": 271095.88
+            },
+            {
+                "state": "Illinois",
+                "sales": 525074.84,
+                "profit": 98684.84
+            },
+            {
+                "state": "Ohio",
+                "sales": 389451.0,
+                "profit": 59295.88
+            }
+        ]
+    },
+    "East": {
+        "sales": 2119580.5,
+        "profit": 366130.43,
+        "quantity": 6459,
+        "margin": 0.1727,
+        "top_states": [
+            {
+                "state": "Pennsylvania",
+                "sales": 1017848.67,
+                "profit": 174009.36
+            },
+            {
+                "state": "New York",
+                "sales": 644112.4,
+                "profit": 109051.7
+            },
+            {
+                "state": "Massachusetts",
+                "sales": 457619.43,
+                "profit": 83069.37
+            }
+        ]
+    },
+    "South": {
+        "sales": 2100183.62,
+        "profit": 374736.61,
+        "quantity": 6927,
+        "margin": 0.1784,
+        "top_states": [
+            {
+                "state": "Florida",
+                "sales": 1141865.18,
+                "profit": 194027.75
+            },
+            {
+                "state": "North Carolina",
+                "sales": 505832.67,
+                "profit": 95318.36
+            },
+            {
+                "state": "Georgia",
+                "sales": 452485.77,
+                "profit": 85390.5
+            }
+        ]
+    },
+    "West": {
+        "sales": 2285295.6,
+        "profit": 411474.25,
+        "quantity": 7161,
+        "margin": 0.1801,
+        "top_states": [
+            {
+                "state": "California",
+                "sales": 1368009.48,
+                "profit": 241638.57
+            },
+            {
+                "state": "Washington",
+                "sales": 469142.0,
+                "profit": 88981.4
+            },
+            {
+                "state": "Oregon",
+                "sales": 448144.12,
+                "profit": 80854.28
+            }
+        ]
+    }
+}

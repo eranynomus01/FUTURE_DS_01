@@ -1,0 +1,26 @@
+[
+    {
+        "segment": "Consumer",
+        "sales": 3538429.79,
+        "profit": 637325.45,
+        "quantity": 10951,
+        "orders": 1928,
+        "margin": 0.1801
+    },
+    {
+        "segment": "Corporate",
+        "sales": 2524541.47,
+        "profit": 446457.07,
+        "quantity": 7977,
+        "orders": 1476,
+        "margin": 0.1768
+    },
+    {
+        "segment": "Home Office",
+        "sales": 2817120.11,
+        "profit": 497635.37,
+        "quantity": 8791,
+        "orders": 1596,
+        "margin": 0.1766
+    }
+]
