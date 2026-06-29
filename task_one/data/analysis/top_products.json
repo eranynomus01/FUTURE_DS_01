@@ -1,16 +1,16 @@
 [
     {
-        "product_id": "Tec-Cop-4000",
+        "product_id": "Tec-Cop-5723",
         "product_name": "Canon ImageRUNNER Advanced",
         "category": "Technology",
         "sub_category": "Copiers",
-        "sales": 25499.9,
-        "profit": 5812.47,
+        "sales": 35249.86,
+        "profit": 10068.71,
         "quantity": 15,
-        "margin": 0.2279
+        "margin": 0.2856
     },
     {
-        "product_id": "Tec-Cop-1099",
+        "product_id": "Tec-Cop-9298",
         "product_name": "Canon ImageRUNNER Advanced",
         "category": "Technology",
         "sub_category": "Copiers",
@@ -20,7 +20,7 @@
         "margin": 0.3
     },
     {
-        "product_id": "Tec-Cop-3005",
+        "product_id": "Tec-Cop-6982",
         "product_name": "Canon ImageRUNNER Advanced",
         "category": "Technology",
         "sub_category": "Copiers",
@@ -30,7 +30,17 @@
         "margin": 0.3
     },
     {
-        "product_id": "Tec-Cop-1572",
+        "product_id": "Tec-Cop-6065",
+        "product_name": "Canon ImageRUNNER Advanced",
+        "category": "Technology",
+        "sub_category": "Copiers",
+        "sales": 24999.9,
+        "profit": 7499.98,
+        "quantity": 10,
+        "margin": 0.3
+    },
+    {
+        "product_id": "Tec-Cop-4012",
         "product_name": "Canon ImageRUNNER Advanced",
         "category": "Technology",
         "sub_category": "Copiers",
@@ -40,7 +50,7 @@
         "margin": 0.3
     },
     {
-        "product_id": "Tec-Cop-1419",
+        "product_id": "Tec-Cop-8955",
         "product_name": "Canon ImageRUNNER Advanced",
         "category": "Technology",
         "sub_category": "Copiers",
@@ -50,7 +60,7 @@
         "margin": 0.3
     },
     {
-        "product_id": "Tec-Cop-1736",
+        "product_id": "Tec-Cop-4763",
         "product_name": "Canon ImageRUNNER Advanced",
         "category": "Technology",
         "sub_category": "Copiers",
@@ -60,7 +70,7 @@
         "margin": 0.3
     },
     {
-        "product_id": "Tec-Cop-9583",
+        "product_id": "Tec-Cop-7440",
         "product_name": "Canon ImageRUNNER Advanced",
         "category": "Technology",
         "sub_category": "Copiers",
@@ -70,7 +80,7 @@
         "margin": 0.3
     },
     {
-        "product_id": "Tec-Cop-5867",
+        "product_id": "Tec-Cop-2794",
         "product_name": "Canon ImageRUNNER Advanced",
         "category": "Technology",
         "sub_category": "Copiers",
@@ -80,17 +90,47 @@
         "margin": 0.3
     },
     {
-        "product_id": "Tec-Cop-8219",
+        "product_id": "Tec-Cop-9079",
         "product_name": "Canon ImageRUNNER Advanced",
         "category": "Technology",
         "sub_category": "Copiers",
         "sales": 22499.91,
-        "profit": 6187.48,
-        "quantity": 10,
-        "margin": 0.275
+        "profit": 6749.97,
+        "quantity": 9,
+        "margin": 0.3
     },
     {
-        "product_id": "Tec-Cop-4928",
+        "product_id": "Tec-Cop-9738",
+        "product_name": "Canon ImageRUNNER Advanced",
+        "category": "Technology",
+        "sub_category": "Copiers",
+        "sales": 22499.91,
+        "profit": 6749.97,
+        "quantity": 9,
+        "margin": 0.3
+    },
+    {
+        "product_id": "Tec-Cop-9905",
+        "product_name": "Canon ImageRUNNER Advanced",
+        "category": "Technology",
+        "sub_category": "Copiers",
+        "sales": 22499.91,
+        "profit": 6749.97,
+        "quantity": 9,
+        "margin": 0.3
+    },
+    {
+        "product_id": "Tec-Cop-8875",
+        "product_name": "Canon ImageRUNNER Advanced",
+        "category": "Technology",
+        "sub_category": "Copiers",
+        "sales": 22499.91,
+        "profit": 6749.97,
+        "quantity": 9,
+        "margin": 0.3
+    },
+    {
+        "product_id": "Tec-Cop-5980",
         "product_name": "Canon ImageRUNNER Advanced",
         "category": "Technology",
         "sub_category": "Copiers",
@@ -100,7 +140,7 @@
         "margin": 0.275
     },
     {
-        "product_id": "Tec-Cop-5372",
+        "product_id": "Tec-Cop-9809",
         "product_name": "Canon ImageRUNNER Advanced",
         "category": "Technology",
         "sub_category": "Copiers",
@@ -108,45 +148,5 @@
         "profit": 5568.73,
         "quantity": 9,
         "margin": 0.275
-    },
-    {
-        "product_id": "Tec-Cop-2308",
-        "product_name": "Canon ImageRUNNER Advanced",
-        "category": "Technology",
-        "sub_category": "Copiers",
-        "sales": 19999.92,
-        "profit": 4999.98,
-        "quantity": 10,
-        "margin": 0.25
-    },
-    {
-        "product_id": "Tec-Cop-8020",
-        "product_name": "Canon ImageRUNNER Advanced",
-        "category": "Technology",
-        "sub_category": "Copiers",
-        "sales": 19999.92,
-        "profit": 4999.98,
-        "quantity": 10,
-        "margin": 0.25
-    },
-    {
-        "product_id": "Tec-Cop-7942",
-        "product_name": "Canon ImageRUNNER Advanced",
-        "category": "Technology",
-        "sub_category": "Copiers",
-        "sales": 19999.92,
-        "profit": 4999.98,
-        "quantity": 10,
-        "margin": 0.25
-    },
-    {
-        "product_id": "Tec-Cop-6561",
-        "product_name": "Canon ImageRUNNER Advanced",
-        "category": "Technology",
-        "sub_category": "Copiers",
-        "sales": 19999.92,
-        "profit": 4999.98,
-        "quantity": 10,
-        "margin": 0.25
     }
 ]

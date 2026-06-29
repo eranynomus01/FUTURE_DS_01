@@ -1,26 +1,26 @@
 [
     {
         "segment": "Consumer",
-        "sales": 3187225.7,
-        "profit": 560839.14,
-        "quantity": 10060,
-        "orders": 1824,
-        "margin": 0.176
+        "sales": 2579455.73,
+        "profit": 461597.66,
+        "quantity": 8021,
+        "orders": 1467,
+        "margin": 0.179
     },
     {
         "segment": "Corporate",
-        "sales": 3001417.67,
-        "profit": 525890.4,
-        "quantity": 8816,
-        "orders": 1581,
-        "margin": 0.1752
+        "sales": 2688458.54,
+        "profit": 480590.7,
+        "quantity": 8543,
+        "orders": 1536,
+        "margin": 0.1788
     },
     {
         "segment": "Home Office",
-        "sales": 2669860.28,
-        "profit": 452445.55,
-        "quantity": 8737,
-        "orders": 1595,
-        "margin": 0.1695
+        "sales": 3757169.57,
+        "profit": 686323.03,
+        "quantity": 10984,
+        "orders": 1997,
+        "margin": 0.1827
     }
 ]

@@ -94,4 +94,6 @@ def test_pipeline():
     print("==========================================")
 
 if __name__ == "__main__":
+    # Ensure current working directory is the script's root task directory
+    os.chdir(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
     test_pipeline()

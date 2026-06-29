@@ -1,93 +1,93 @@
 {
     "Central": {
-        "sales": 2232507.71,
-        "profit": 383243.89,
-        "quantity": 6928,
-        "margin": 0.1717,
+        "sales": 2199171.65,
+        "profit": 376589.08,
+        "quantity": 6868,
+        "margin": 0.1712,
         "top_states": [
             {
                 "state": "Texas",
-                "sales": 1383722.01,
-                "profit": 244308.59
+                "sales": 1431925.52,
+                "profit": 251218.01
             },
             {
                 "state": "Illinois",
-                "sales": 491168.27,
-                "profit": 79799.31
+                "sales": 394882.62,
+                "profit": 64824.01
             },
             {
                 "state": "Ohio",
-                "sales": 357617.43,
-                "profit": 59135.99
+                "sales": 372363.51,
+                "profit": 60547.06
             }
         ]
     },
     "East": {
-        "sales": 2197834.93,
-        "profit": 383134.61,
-        "quantity": 6702,
-        "margin": 0.1743,
+        "sales": 2563832.15,
+        "profit": 483635.56,
+        "quantity": 7266,
+        "margin": 0.1886,
         "top_states": [
             {
                 "state": "New York",
-                "sales": 962400.21,
-                "profit": 175477.5
+                "sales": 1135547.35,
+                "profit": 229551.49
             },
             {
                 "state": "Pennsylvania",
-                "sales": 800839.29,
-                "profit": 133851.03
+                "sales": 894133.97,
+                "profit": 155803.49
             },
             {
                 "state": "Massachusetts",
-                "sales": 434595.43,
-                "profit": 73806.08
+                "sales": 534150.83,
+                "profit": 98280.58
             }
         ]
     },
     "South": {
-        "sales": 2276024.15,
-        "profit": 408449.84,
-        "quantity": 7117,
-        "margin": 0.1795,
+        "sales": 1943083.51,
+        "profit": 343081.02,
+        "quantity": 6599,
+        "margin": 0.1766,
         "top_states": [
             {
                 "state": "Florida",
-                "sales": 1318984.19,
-                "profit": 222894.4
+                "sales": 1128992.14,
+                "profit": 196720.64
             },
             {
                 "state": "Georgia",
-                "sales": 497592.22,
-                "profit": 95979.37
+                "sales": 416146.85,
+                "profit": 79348.94
             },
             {
                 "state": "North Carolina",
-                "sales": 459447.74,
-                "profit": 89576.07
+                "sales": 397944.52,
+                "profit": 67011.44
             }
         ]
     },
     "West": {
-        "sales": 2152136.86,
-        "profit": 364346.75,
-        "quantity": 6866,
-        "margin": 0.1693,
+        "sales": 2318996.53,
+        "profit": 425205.73,
+        "quantity": 6815,
+        "margin": 0.1834,
         "top_states": [
             {
                 "state": "California",
-                "sales": 1325990.53,
-                "profit": 228317.03
+                "sales": 1441988.36,
+                "profit": 258188.99
             },
             {
                 "state": "Washington",
-                "sales": 434026.59,
-                "profit": 69515.32
+                "sales": 470531.27,
+                "profit": 94380.18
             },
             {
                 "state": "Oregon",
-                "sales": 392119.74,
-                "profit": 66514.4
+                "sales": 406476.9,
+                "profit": 72636.56
             }
         ]
     }
