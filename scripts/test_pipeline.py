@@ -7,11 +7,11 @@ def test_pipeline():
     print("RUNNING PIPELINE VERIFICATION TESTS")
     print("==========================================")
     
-    raw_path = "d:/futureintern tasks/data/raw_sales_data.csv"
-    clean_csv_path = "d:/futureintern tasks/data/cleaned_sales_data.csv"
-    clean_xlsx_path = "d:/futureintern tasks/data/cleaned_sales_data.xlsx"
-    analysis_dir = "d:/futureintern tasks/data/analysis"
-    js_data_path = "d:/futureintern tasks/web/data.js"
+    raw_path = "data/raw_sales_data.csv"
+    clean_csv_path = "data/cleaned_sales_data.csv"
+    clean_xlsx_path = "data/cleaned_sales_data.xlsx"
+    analysis_dir = "data/analysis"
+    js_data_path = "web/data.js"
     
     # 1. Assert Raw Data Exists and has Expected Issues
     assert os.path.exists(raw_path), "Raw data CSV does not exist!"

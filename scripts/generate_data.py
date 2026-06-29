@@ -4,7 +4,7 @@ import os
 from datetime import datetime, timedelta
 
 # Ensure target directory exists
-os.makedirs("d:/futureintern tasks/data", exist_ok=True)
+os.makedirs("data", exist_ok=True)
 
 # Define master lists for generation
 segments = ["Consumer", "Corporate", "Home Office"]
@@ -117,7 +117,7 @@ date_delta = (end_date - start_date).days
 print("Generating raw sales data...")
 
 # Open CSV for writing
-raw_data_path = "d:/futureintern tasks/data/raw_sales_data.csv"
+raw_data_path = "data/raw_sales_data.csv"
 with open(raw_data_path, "w", newline="", encoding="utf-8") as f:
     writer = csv.writer(f)
     # Header

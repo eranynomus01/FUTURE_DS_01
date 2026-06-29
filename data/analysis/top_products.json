@@ -1,0 +1,152 @@
+[
+    {
+        "product_id": "Tec-Cop-4000",
+        "product_name": "Canon ImageRUNNER Advanced",
+        "category": "Technology",
+        "sub_category": "Copiers",
+        "sales": 25499.9,
+        "profit": 5812.47,
+        "quantity": 15,
+        "margin": 0.2279
+    },
+    {
+        "product_id": "Tec-Cop-1099",
+        "product_name": "Canon ImageRUNNER Advanced",
+        "category": "Technology",
+        "sub_category": "Copiers",
+        "sales": 24999.9,
+        "profit": 7499.97,
+        "quantity": 10,
+        "margin": 0.3
+    },
+    {
+        "product_id": "Tec-Cop-3005",
+        "product_name": "Canon ImageRUNNER Advanced",
+        "category": "Technology",
+        "sub_category": "Copiers",
+        "sales": 24999.9,
+        "profit": 7499.97,
+        "quantity": 10,
+        "margin": 0.3
+    },
+    {
+        "product_id": "Tec-Cop-1572",
+        "product_name": "Canon ImageRUNNER Advanced",
+        "category": "Technology",
+        "sub_category": "Copiers",
+        "sales": 24999.9,
+        "profit": 7499.97,
+        "quantity": 10,
+        "margin": 0.3
+    },
+    {
+        "product_id": "Tec-Cop-1419",
+        "product_name": "Canon ImageRUNNER Advanced",
+        "category": "Technology",
+        "sub_category": "Copiers",
+        "sales": 24999.9,
+        "profit": 7499.97,
+        "quantity": 10,
+        "margin": 0.3
+    },
+    {
+        "product_id": "Tec-Cop-1736",
+        "product_name": "Canon ImageRUNNER Advanced",
+        "category": "Technology",
+        "sub_category": "Copiers",
+        "sales": 22499.91,
+        "profit": 6749.97,
+        "quantity": 9,
+        "margin": 0.3
+    },
+    {
+        "product_id": "Tec-Cop-9583",
+        "product_name": "Canon ImageRUNNER Advanced",
+        "category": "Technology",
+        "sub_category": "Copiers",
+        "sales": 22499.91,
+        "profit": 6749.97,
+        "quantity": 9,
+        "margin": 0.3
+    },
+    {
+        "product_id": "Tec-Cop-5867",
+        "product_name": "Canon ImageRUNNER Advanced",
+        "category": "Technology",
+        "sub_category": "Copiers",
+        "sales": 22499.91,
+        "profit": 6749.97,
+        "quantity": 9,
+        "margin": 0.3
+    },
+    {
+        "product_id": "Tec-Cop-8219",
+        "product_name": "Canon ImageRUNNER Advanced",
+        "category": "Technology",
+        "sub_category": "Copiers",
+        "sales": 22499.91,
+        "profit": 6187.48,
+        "quantity": 10,
+        "margin": 0.275
+    },
+    {
+        "product_id": "Tec-Cop-4928",
+        "product_name": "Canon ImageRUNNER Advanced",
+        "category": "Technology",
+        "sub_category": "Copiers",
+        "sales": 20249.92,
+        "profit": 5568.73,
+        "quantity": 9,
+        "margin": 0.275
+    },
+    {
+        "product_id": "Tec-Cop-5372",
+        "product_name": "Canon ImageRUNNER Advanced",
+        "category": "Technology",
+        "sub_category": "Copiers",
+        "sales": 20249.92,
+        "profit": 5568.73,
+        "quantity": 9,
+        "margin": 0.275
+    },
+    {
+        "product_id": "Tec-Cop-2308",
+        "product_name": "Canon ImageRUNNER Advanced",
+        "category": "Technology",
+        "sub_category": "Copiers",
+        "sales": 19999.92,
+        "profit": 4999.98,
+        "quantity": 10,
+        "margin": 0.25
+    },
+    {
+        "product_id": "Tec-Cop-8020",
+        "product_name": "Canon ImageRUNNER Advanced",
+        "category": "Technology",
+        "sub_category": "Copiers",
+        "sales": 19999.92,
+        "profit": 4999.98,
+        "quantity": 10,
+        "margin": 0.25
+    },
+    {
+        "product_id": "Tec-Cop-7942",
+        "product_name": "Canon ImageRUNNER Advanced",
+        "category": "Technology",
+        "sub_category": "Copiers",
+        "sales": 19999.92,
+        "profit": 4999.98,
+        "quantity": 10,
+        "margin": 0.25
+    },
+    {
+        "product_id": "Tec-Cop-6561",
+        "product_name": "Canon ImageRUNNER Advanced",
+        "category": "Technology",
+        "sub_category": "Copiers",
+        "sales": 19999.92,
+        "profit": 4999.98,
+        "quantity": 10,
+        "margin": 0.25
+    }
+]

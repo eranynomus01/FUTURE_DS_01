@@ -4,8 +4,8 @@ import os
 
 print("Starting exploratory data analysis and summary generation...")
 
-clean_csv_path = "d:/futureintern tasks/data/cleaned_sales_data.csv"
-analysis_dir = "d:/futureintern tasks/data/analysis"
+clean_csv_path = "data/cleaned_sales_data.csv"
+analysis_dir = "data/analysis"
 os.makedirs(analysis_dir, exist_ok=True)
 
 if not os.path.exists(clean_csv_path):
@@ -253,7 +253,7 @@ for _, row in df[tx_cols].iterrows():
     })
 
 # --- 8. Export JS File for CORS-free local execution ---
-web_dir = "d:/futureintern tasks/web"
+web_dir = "web"
 os.makedirs(web_dir, exist_ok=True)
 js_data = {
     "kpis": kpi_data,

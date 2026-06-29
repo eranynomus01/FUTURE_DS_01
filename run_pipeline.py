@@ -16,7 +16,7 @@ def run_script(script_path):
 
 if __name__ == "__main__":
     # Ensure current working directory is workspace root
-    os.chdir("d:/futureintern tasks")
+    os.chdir(os.path.dirname(os.path.abspath(__file__)))
     
     # Run the data pipeline scripts in order
     run_script("scripts/generate_data.py")

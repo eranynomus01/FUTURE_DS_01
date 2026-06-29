@@ -4,9 +4,9 @@ import os
 
 print("Starting data cleaning pipeline...")
 
-raw_path = "d:/futureintern tasks/data/raw_sales_data.csv"
-clean_csv_path = "d:/futureintern tasks/data/cleaned_sales_data.csv"
-clean_xlsx_path = "d:/futureintern tasks/data/cleaned_sales_data.xlsx"
+raw_path = "data/raw_sales_data.csv"
+clean_csv_path = "data/cleaned_sales_data.csv"
+clean_xlsx_path = "data/cleaned_sales_data.xlsx"
 
 # Load the raw dataset
 if not os.path.exists(raw_path):
