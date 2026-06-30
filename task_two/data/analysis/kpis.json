@@ -1,0 +1,13 @@
+{
+    "total_customers": 5000,
+    "active_customers": 3158,
+    "churned_customers": 1842,
+    "overall_churn_rate": 0.3684,
+    "avg_tenure_overall": 14.96,
+    "avg_tenure_churned": 9.32,
+    "avg_tenure_active": 18.25,
+    "mrr": 363290.8,
+    "total_revenue": 8216012.02,
+    "empirical_ltv": 1643.2,
+    "projected_ltv": 292.44
+}

@@ -1,0 +1,2558 @@
+[
+    {
+        "cohort_month": "2023-01",
+        "cohort_size": 144,
+        "retention": [
+            {
+                "age": 0,
+                "retained_count": 144,
+                "retention_rate": 1.0
+            },
+            {
+                "age": 1,
+                "retained_count": 144,
+                "retention_rate": 1.0
+            },
+            {
+                "age": 2,
+                "retained_count": 140,
+                "retention_rate": 0.9722
+            },
+            {
+                "age": 3,
+                "retained_count": 139,
+                "retention_rate": 0.9653
+            },
+            {
+                "age": 4,
+                "retained_count": 137,
+                "retention_rate": 0.9514
+            },
+            {
+                "age": 5,
+                "retained_count": 136,
+                "retention_rate": 0.9444
+            },
+            {
+                "age": 6,
+                "retained_count": 135,
+                "retention_rate": 0.9375
+            },
+            {
+                "age": 7,
+                "retained_count": 133,
+                "retention_rate": 0.9236
+            },
+            {
+                "age": 8,
+                "retained_count": 133,
+                "retention_rate": 0.9236
+            },
+            {
+                "age": 9,
+                "retained_count": 133,
+                "retention_rate": 0.9236
+            },
+            {
+                "age": 10,
+                "retained_count": 133,
+                "retention_rate": 0.9236
+            },
+            {
+                "age": 11,
+                "retained_count": 132,
+                "retention_rate": 0.9167
+            },
+            {
+                "age": 12,
+                "retained_count": 131,
+                "retention_rate": 0.9097
+            }
+        ]
+    },
+    {
+        "cohort_month": "2023-02",
+        "cohort_size": 119,
+        "retention": [
+            {
+                "age": 0,
+                "retained_count": 119,
+                "retention_rate": 1.0
+            },
+            {
+                "age": 1,
+                "retained_count": 119,
+                "retention_rate": 1.0
+            },
+            {
+                "age": 2,
+                "retained_count": 117,
+                "retention_rate": 0.9832
+            },
+            {
+                "age": 3,
+                "retained_count": 116,
+                "retention_rate": 0.9748
+            },
+            {
+                "age": 4,
+                "retained_count": 112,
+                "retention_rate": 0.9412
+            },
+            {
+                "age": 5,
+                "retained_count": 111,
+                "retention_rate": 0.9328
+            },
+            {
+                "age": 6,
+                "retained_count": 111,
+                "retention_rate": 0.9328
+            },
+            {
+                "age": 7,
+                "retained_count": 107,
+                "retention_rate": 0.8992
+            },
+            {
+                "age": 8,
+                "retained_count": 107,
+                "retention_rate": 0.8992
+            },
+            {
+                "age": 9,
+                "retained_count": 107,
+                "retention_rate": 0.8992
+            },
+            {
+                "age": 10,
+                "retained_count": 106,
+                "retention_rate": 0.8908
+            },
+            {
+                "age": 11,
+                "retained_count": 104,
+                "retention_rate": 0.8739
+            },
+            {
+                "age": 12,
+                "retained_count": 101,
+                "retention_rate": 0.8487
+            }
+        ]
+    },
+    {
+        "cohort_month": "2023-03",
+        "cohort_size": 148,
+        "retention": [
+            {
+                "age": 0,
+                "retained_count": 148,
+                "retention_rate": 1.0
+            },
+            {
+                "age": 1,
+                "retained_count": 148,
+                "retention_rate": 1.0
+            },
+            {
+                "age": 2,
+                "retained_count": 147,
+                "retention_rate": 0.9932
+            },
+            {
+                "age": 3,
+                "retained_count": 145,
+                "retention_rate": 0.9797
+            },
+            {
+                "age": 4,
+                "retained_count": 145,
+                "retention_rate": 0.9797
+            },
+            {
+                "age": 5,
+                "retained_count": 145,
+                "retention_rate": 0.9797
+            },
+            {
+                "age": 6,
+                "retained_count": 142,
+                "retention_rate": 0.9595
+            },
+            {
+                "age": 7,
+                "retained_count": 141,
+                "retention_rate": 0.9527
+            },
+            {
+                "age": 8,
+                "retained_count": 141,
+                "retention_rate": 0.9527
+            },
+            {
+                "age": 9,
+                "retained_count": 139,
+                "retention_rate": 0.9392
+            },
+            {
+                "age": 10,
+                "retained_count": 138,
+                "retention_rate": 0.9324
+            },
+            {
+                "age": 11,
+                "retained_count": 135,
+                "retention_rate": 0.9122
+            },
+            {
+                "age": 12,
+                "retained_count": 133,
+                "retention_rate": 0.8986
+            }
+        ]
+    },
+    {
+        "cohort_month": "2023-04",
+        "cohort_size": 126,
+        "retention": [
+            {
+                "age": 0,
+                "retained_count": 126,
+                "retention_rate": 1.0
+            },
+            {
+                "age": 1,
+                "retained_count": 126,
+                "retention_rate": 1.0
+            },
+            {
+                "age": 2,
+                "retained_count": 125,
+                "retention_rate": 0.9921
+            },
+            {
+                "age": 3,
+                "retained_count": 125,
+                "retention_rate": 0.9921
+            },
+            {
+                "age": 4,
+                "retained_count": 123,
+                "retention_rate": 0.9762
+            },
+            {
+                "age": 5,
+                "retained_count": 122,
+                "retention_rate": 0.9683
+            },
+            {
+                "age": 6,
+                "retained_count": 119,
+                "retention_rate": 0.9444
+            },
+            {
+                "age": 7,
+                "retained_count": 115,
+                "retention_rate": 0.9127
+            },
+            {
+                "age": 8,
+                "retained_count": 115,
+                "retention_rate": 0.9127
+            },
+            {
+                "age": 9,
+                "retained_count": 113,
+                "retention_rate": 0.8968
+            },
+            {
+                "age": 10,
+                "retained_count": 113,
+                "retention_rate": 0.8968
+            },
+            {
+                "age": 11,
+                "retained_count": 113,
+                "retention_rate": 0.8968
+            },
+            {
+                "age": 12,
+                "retained_count": 112,
+                "retention_rate": 0.8889
+            }
+        ]
+    },
+    {
+        "cohort_month": "2023-05",
+        "cohort_size": 131,
+        "retention": [
+            {
+                "age": 0,
+                "retained_count": 131,
+                "retention_rate": 1.0
+            },
+            {
+                "age": 1,
+                "retained_count": 131,
+                "retention_rate": 1.0
+            },
+            {
+                "age": 2,
+                "retained_count": 130,
+                "retention_rate": 0.9924
+            },
+            {
+                "age": 3,
+                "retained_count": 130,
+                "retention_rate": 0.9924
+            },
+            {
+                "age": 4,
+                "retained_count": 127,
+                "retention_rate": 0.9695
+            },
+            {
+                "age": 5,
+                "retained_count": 123,
+                "retention_rate": 0.9389
+            },
+            {
+                "age": 6,
+                "retained_count": 122,
+                "retention_rate": 0.9313
+            },
+            {
+                "age": 7,
+                "retained_count": 121,
+                "retention_rate": 0.9237
+            },
+            {
+                "age": 8,
+                "retained_count": 119,
+                "retention_rate": 0.9084
+            },
+            {
+                "age": 9,
+                "retained_count": 119,
+                "retention_rate": 0.9084
+            },
+            {
+                "age": 10,
+                "retained_count": 118,
+                "retention_rate": 0.9008
+            },
+            {
+                "age": 11,
+                "retained_count": 117,
+                "retention_rate": 0.8931
+            },
+            {
+                "age": 12,
+                "retained_count": 114,
+                "retention_rate": 0.8702
+            }
+        ]
+    },
+    {
+        "cohort_month": "2023-06",
+        "cohort_size": 154,
+        "retention": [
+            {
+                "age": 0,
+                "retained_count": 154,
+                "retention_rate": 1.0
+            },
+            {
+                "age": 1,
+                "retained_count": 154,
+                "retention_rate": 1.0
+            },
+            {
+                "age": 2,
+                "retained_count": 149,
+                "retention_rate": 0.9675
+            },
+            {
+                "age": 3,
+                "retained_count": 146,
+                "retention_rate": 0.9481
+            },
+            {
+                "age": 4,
+                "retained_count": 144,
+                "retention_rate": 0.9351
+            },
+            {
+                "age": 5,
+                "retained_count": 143,
+                "retention_rate": 0.9286
+            },
+            {
+                "age": 6,
+                "retained_count": 138,
+                "retention_rate": 0.8961
+            },
+            {
+                "age": 7,
+                "retained_count": 133,
+                "retention_rate": 0.8636
+            },
+            {
+                "age": 8,
+                "retained_count": 132,
+                "retention_rate": 0.8571
+            },
+            {
+                "age": 9,
+                "retained_count": 127,
+                "retention_rate": 0.8247
+            },
+            {
+                "age": 10,
+                "retained_count": 126,
+                "retention_rate": 0.8182
+            },
+            {
+                "age": 11,
+                "retained_count": 125,
+                "retention_rate": 0.8117
+            },
+            {
+                "age": 12,
+                "retained_count": 124,
+                "retention_rate": 0.8052
+            }
+        ]
+    },
+    {
+        "cohort_month": "2023-07",
+        "cohort_size": 159,
+        "retention": [
+            {
+                "age": 0,
+                "retained_count": 159,
+                "retention_rate": 1.0
+            },
+            {
+                "age": 1,
+                "retained_count": 159,
+                "retention_rate": 1.0
+            },
+            {
+                "age": 2,
+                "retained_count": 156,
+                "retention_rate": 0.9811
+            },
+            {
+                "age": 3,
+                "retained_count": 150,
+                "retention_rate": 0.9434
+            },
+            {
+                "age": 4,
+                "retained_count": 149,
+                "retention_rate": 0.9371
+            },
+            {
+                "age": 5,
+                "retained_count": 147,
+                "retention_rate": 0.9245
+            },
+            {
+                "age": 6,
+                "retained_count": 143,
+                "retention_rate": 0.8994
+            },
+            {
+                "age": 7,
+                "retained_count": 141,
+                "retention_rate": 0.8868
+            },
+            {
+                "age": 8,
+                "retained_count": 140,
+                "retention_rate": 0.8805
+            },
+            {
+                "age": 9,
+                "retained_count": 138,
+                "retention_rate": 0.8679
+            },
+            {
+                "age": 10,
+                "retained_count": 136,
+                "retention_rate": 0.8553
+            },
+            {
+                "age": 11,
+                "retained_count": 133,
+                "retention_rate": 0.8365
+            },
+            {
+                "age": 12,
+                "retained_count": 132,
+                "retention_rate": 0.8302
+            }
+        ]
+    },
+    {
+        "cohort_month": "2023-08",
+        "cohort_size": 150,
+        "retention": [
+            {
+                "age": 0,
+                "retained_count": 150,
+                "retention_rate": 1.0
+            },
+            {
+                "age": 1,
+                "retained_count": 150,
+                "retention_rate": 1.0
+            },
+            {
+                "age": 2,
+                "retained_count": 149,
+                "retention_rate": 0.9933
+            },
+            {
+                "age": 3,
+                "retained_count": 147,
+                "retention_rate": 0.98
+            },
+            {
+                "age": 4,
+                "retained_count": 145,
+                "retention_rate": 0.9667
+            },
+            {
+                "age": 5,
+                "retained_count": 145,
+                "retention_rate": 0.9667
+            },
+            {
+                "age": 6,
+                "retained_count": 142,
+                "retention_rate": 0.9467
+            },
+            {
+                "age": 7,
+                "retained_count": 141,
+                "retention_rate": 0.94
+            },
+            {
+                "age": 8,
+                "retained_count": 139,
+                "retention_rate": 0.9267
+            },
+            {
+                "age": 9,
+                "retained_count": 137,
+                "retention_rate": 0.9133
+            },
+            {
+                "age": 10,
+                "retained_count": 136,
+                "retention_rate": 0.9067
+            },
+            {
+                "age": 11,
+                "retained_count": 134,
+                "retention_rate": 0.8933
+            },
+            {
+                "age": 12,
+                "retained_count": 131,
+                "retention_rate": 0.8733
+            }
+        ]
+    },
+    {
+        "cohort_month": "2023-09",
+        "cohort_size": 145,
+        "retention": [
+            {
+                "age": 0,
+                "retained_count": 145,
+                "retention_rate": 1.0
+            },
+            {
+                "age": 1,
+                "retained_count": 145,
+                "retention_rate": 1.0
+            },
+            {
+                "age": 2,
+                "retained_count": 144,
+                "retention_rate": 0.9931
+            },
+            {
+                "age": 3,
+                "retained_count": 142,
+                "retention_rate": 0.9793
+            },
+            {
+                "age": 4,
+                "retained_count": 138,
+                "retention_rate": 0.9517
+            },
+            {
+                "age": 5,
+                "retained_count": 134,
+                "retention_rate": 0.9241
+            },
+            {
+                "age": 6,
+                "retained_count": 131,
+                "retention_rate": 0.9034
+            },
+            {
+                "age": 7,
+                "retained_count": 128,
+                "retention_rate": 0.8828
+            },
+            {
+                "age": 8,
+                "retained_count": 124,
+                "retention_rate": 0.8552
+            },
+            {
+                "age": 9,
+                "retained_count": 121,
+                "retention_rate": 0.8345
+            },
+            {
+                "age": 10,
+                "retained_count": 121,
+                "retention_rate": 0.8345
+            },
+            {
+                "age": 11,
+                "retained_count": 119,
+                "retention_rate": 0.8207
+            },
+            {
+                "age": 12,
+                "retained_count": 117,
+                "retention_rate": 0.8069
+            }
+        ]
+    },
+    {
+        "cohort_month": "2023-10",
+        "cohort_size": 137,
+        "retention": [
+            {
+                "age": 0,
+                "retained_count": 137,
+                "retention_rate": 1.0
+            },
+            {
+                "age": 1,
+                "retained_count": 137,
+                "retention_rate": 1.0
+            },
+            {
+                "age": 2,
+                "retained_count": 136,
+                "retention_rate": 0.9927
+            },
+            {
+                "age": 3,
+                "retained_count": 132,
+                "retention_rate": 0.9635
+            },
+            {
+                "age": 4,
+                "retained_count": 130,
+                "retention_rate": 0.9489
+            },
+            {
+                "age": 5,
+                "retained_count": 125,
+                "retention_rate": 0.9124
+            },
+            {
+                "age": 6,
+                "retained_count": 123,
+                "retention_rate": 0.8978
+            },
+            {
+                "age": 7,
+                "retained_count": 119,
+                "retention_rate": 0.8686
+            },
+            {
+                "age": 8,
+                "retained_count": 119,
+                "retention_rate": 0.8686
+            },
+            {
+                "age": 9,
+                "retained_count": 119,
+                "retention_rate": 0.8686
+            },
+            {
+                "age": 10,
+                "retained_count": 119,
+                "retention_rate": 0.8686
+            },
+            {
+                "age": 11,
+                "retained_count": 115,
+                "retention_rate": 0.8394
+            },
+            {
+                "age": 12,
+                "retained_count": 114,
+                "retention_rate": 0.8321
+            }
+        ]
+    },
+    {
+        "cohort_month": "2023-11",
+        "cohort_size": 120,
+        "retention": [
+            {
+                "age": 0,
+                "retained_count": 120,
+                "retention_rate": 1.0
+            },
+            {
+                "age": 1,
+                "retained_count": 120,
+                "retention_rate": 1.0
+            },
+            {
+                "age": 2,
+                "retained_count": 117,
+                "retention_rate": 0.975
+            },
+            {
+                "age": 3,
+                "retained_count": 114,
+                "retention_rate": 0.95
+            },
+            {
+                "age": 4,
+                "retained_count": 113,
+                "retention_rate": 0.9417
+            },
+            {
+                "age": 5,
+                "retained_count": 112,
+                "retention_rate": 0.9333
+            },
+            {
+                "age": 6,
+                "retained_count": 111,
+                "retention_rate": 0.925
+            },
+            {
+                "age": 7,
+                "retained_count": 109,
+                "retention_rate": 0.9083
+            },
+            {
+                "age": 8,
+                "retained_count": 107,
+                "retention_rate": 0.8917
+            },
+            {
+                "age": 9,
+                "retained_count": 107,
+                "retention_rate": 0.8917
+            },
+            {
+                "age": 10,
+                "retained_count": 107,
+                "retention_rate": 0.8917
+            },
+            {
+                "age": 11,
+                "retained_count": 105,
+                "retention_rate": 0.875
+            },
+            {
+                "age": 12,
+                "retained_count": 104,
+                "retention_rate": 0.8667
+            }
+        ]
+    },
+    {
+        "cohort_month": "2023-12",
+        "cohort_size": 153,
+        "retention": [
+            {
+                "age": 0,
+                "retained_count": 153,
+                "retention_rate": 1.0
+            },
+            {
+                "age": 1,
+                "retained_count": 153,
+                "retention_rate": 1.0
+            },
+            {
+                "age": 2,
+                "retained_count": 151,
+                "retention_rate": 0.9869
+            },
+            {
+                "age": 3,
+                "retained_count": 146,
+                "retention_rate": 0.9542
+            },
+            {
+                "age": 4,
+                "retained_count": 143,
+                "retention_rate": 0.9346
+            },
+            {
+                "age": 5,
+                "retained_count": 140,
+                "retention_rate": 0.915
+            },
+            {
+                "age": 6,
+                "retained_count": 138,
+                "retention_rate": 0.902
+            },
+            {
+                "age": 7,
+                "retained_count": 137,
+                "retention_rate": 0.8954
+            },
+            {
+                "age": 8,
+                "retained_count": 135,
+                "retention_rate": 0.8824
+            },
+            {
+                "age": 9,
+                "retained_count": 131,
+                "retention_rate": 0.8562
+            },
+            {
+                "age": 10,
+                "retained_count": 128,
+                "retention_rate": 0.8366
+            },
+            {
+                "age": 11,
+                "retained_count": 126,
+                "retention_rate": 0.8235
+            },
+            {
+                "age": 12,
+                "retained_count": 124,
+                "retention_rate": 0.8105
+            }
+        ]
+    },
+    {
+        "cohort_month": "2024-01",
+        "cohort_size": 137,
+        "retention": [
+            {
+                "age": 0,
+                "retained_count": 137,
+                "retention_rate": 1.0
+            },
+            {
+                "age": 1,
+                "retained_count": 137,
+                "retention_rate": 1.0
+            },
+            {
+                "age": 2,
+                "retained_count": 135,
+                "retention_rate": 0.9854
+            },
+            {
+                "age": 3,
+                "retained_count": 134,
+                "retention_rate": 0.9781
+            },
+            {
+                "age": 4,
+                "retained_count": 134,
+                "retention_rate": 0.9781
+            },
+            {
+                "age": 5,
+                "retained_count": 132,
+                "retention_rate": 0.9635
+            },
+            {
+                "age": 6,
+                "retained_count": 126,
+                "retention_rate": 0.9197
+            },
+            {
+                "age": 7,
+                "retained_count": 125,
+                "retention_rate": 0.9124
+            },
+            {
+                "age": 8,
+                "retained_count": 122,
+                "retention_rate": 0.8905
+            },
+            {
+                "age": 9,
+                "retained_count": 121,
+                "retention_rate": 0.8832
+            },
+            {
+                "age": 10,
+                "retained_count": 120,
+                "retention_rate": 0.8759
+            },
+            {
+                "age": 11,
+                "retained_count": 118,
+                "retention_rate": 0.8613
+            },
+            {
+                "age": 12,
+                "retained_count": 116,
+                "retention_rate": 0.8467
+            }
+        ]
+    },
+    {
+        "cohort_month": "2024-02",
+        "cohort_size": 131,
+        "retention": [
+            {
+                "age": 0,
+                "retained_count": 131,
+                "retention_rate": 1.0
+            },
+            {
+                "age": 1,
+                "retained_count": 131,
+                "retention_rate": 1.0
+            },
+            {
+                "age": 2,
+                "retained_count": 130,
+                "retention_rate": 0.9924
+            },
+            {
+                "age": 3,
+                "retained_count": 127,
+                "retention_rate": 0.9695
+            },
+            {
+                "age": 4,
+                "retained_count": 125,
+                "retention_rate": 0.9542
+            },
+            {
+                "age": 5,
+                "retained_count": 122,
+                "retention_rate": 0.9313
+            },
+            {
+                "age": 6,
+                "retained_count": 118,
+                "retention_rate": 0.9008
+            },
+            {
+                "age": 7,
+                "retained_count": 117,
+                "retention_rate": 0.8931
+            },
+            {
+                "age": 8,
+                "retained_count": 117,
+                "retention_rate": 0.8931
+            },
+            {
+                "age": 9,
+                "retained_count": 116,
+                "retention_rate": 0.8855
+            },
+            {
+                "age": 10,
+                "retained_count": 114,
+                "retention_rate": 0.8702
+            },
+            {
+                "age": 11,
+                "retained_count": 112,
+                "retention_rate": 0.855
+            },
+            {
+                "age": 12,
+                "retained_count": 110,
+                "retention_rate": 0.8397
+            }
+        ]
+    },
+    {
+        "cohort_month": "2024-03",
+        "cohort_size": 158,
+        "retention": [
+            {
+                "age": 0,
+                "retained_count": 158,
+                "retention_rate": 1.0
+            },
+            {
+                "age": 1,
+                "retained_count": 158,
+                "retention_rate": 1.0
+            },
+            {
+                "age": 2,
+                "retained_count": 156,
+                "retention_rate": 0.9873
+            },
+            {
+                "age": 3,
+                "retained_count": 149,
+                "retention_rate": 0.943
+            },
+            {
+                "age": 4,
+                "retained_count": 147,
+                "retention_rate": 0.9304
+            },
+            {
+                "age": 5,
+                "retained_count": 145,
+                "retention_rate": 0.9177
+            },
+            {
+                "age": 6,
+                "retained_count": 138,
+                "retention_rate": 0.8734
+            },
+            {
+                "age": 7,
+                "retained_count": 133,
+                "retention_rate": 0.8418
+            },
+            {
+                "age": 8,
+                "retained_count": 130,
+                "retention_rate": 0.8228
+            },
+            {
+                "age": 9,
+                "retained_count": 129,
+                "retention_rate": 0.8165
+            },
+            {
+                "age": 10,
+                "retained_count": 129,
+                "retention_rate": 0.8165
+            },
+            {
+                "age": 11,
+                "retained_count": 126,
+                "retention_rate": 0.7975
+            },
+            {
+                "age": 12,
+                "retained_count": 124,
+                "retention_rate": 0.7848
+            }
+        ]
+    },
+    {
+        "cohort_month": "2024-04",
+        "cohort_size": 131,
+        "retention": [
+            {
+                "age": 0,
+                "retained_count": 131,
+                "retention_rate": 1.0
+            },
+            {
+                "age": 1,
+                "retained_count": 131,
+                "retention_rate": 1.0
+            },
+            {
+                "age": 2,
+                "retained_count": 128,
+                "retention_rate": 0.9771
+            },
+            {
+                "age": 3,
+                "retained_count": 128,
+                "retention_rate": 0.9771
+            },
+            {
+                "age": 4,
+                "retained_count": 121,
+                "retention_rate": 0.9237
+            },
+            {
+                "age": 5,
+                "retained_count": 118,
+                "retention_rate": 0.9008
+            },
+            {
+                "age": 6,
+                "retained_count": 115,
+                "retention_rate": 0.8779
+            },
+            {
+                "age": 7,
+                "retained_count": 114,
+                "retention_rate": 0.8702
+            },
+            {
+                "age": 8,
+                "retained_count": 114,
+                "retention_rate": 0.8702
+            },
+            {
+                "age": 9,
+                "retained_count": 112,
+                "retention_rate": 0.855
+            },
+            {
+                "age": 10,
+                "retained_count": 109,
+                "retention_rate": 0.8321
+            },
+            {
+                "age": 11,
+                "retained_count": 106,
+                "retention_rate": 0.8092
+            },
+            {
+                "age": 12,
+                "retained_count": 100,
+                "retention_rate": 0.7634
+            }
+        ]
+    },
+    {
+        "cohort_month": "2024-05",
+        "cohort_size": 133,
+        "retention": [
+            {
+                "age": 0,
+                "retained_count": 133,
+                "retention_rate": 1.0
+            },
+            {
+                "age": 1,
+                "retained_count": 133,
+                "retention_rate": 1.0
+            },
+            {
+                "age": 2,
+                "retained_count": 130,
+                "retention_rate": 0.9774
+            },
+            {
+                "age": 3,
+                "retained_count": 129,
+                "retention_rate": 0.9699
+            },
+            {
+                "age": 4,
+                "retained_count": 127,
+                "retention_rate": 0.9549
+            },
+            {
+                "age": 5,
+                "retained_count": 125,
+                "retention_rate": 0.9398
+            },
+            {
+                "age": 6,
+                "retained_count": 122,
+                "retention_rate": 0.9173
+            },
+            {
+                "age": 7,
+                "retained_count": 117,
+                "retention_rate": 0.8797
+            },
+            {
+                "age": 8,
+                "retained_count": 116,
+                "retention_rate": 0.8722
+            },
+            {
+                "age": 9,
+                "retained_count": 114,
+                "retention_rate": 0.8571
+            },
+            {
+                "age": 10,
+                "retained_count": 110,
+                "retention_rate": 0.8271
+            },
+            {
+                "age": 11,
+                "retained_count": 107,
+                "retention_rate": 0.8045
+            },
+            {
+                "age": 12,
+                "retained_count": 105,
+                "retention_rate": 0.7895
+            }
+        ]
+    },
+    {
+        "cohort_month": "2024-06",
+        "cohort_size": 134,
+        "retention": [
+            {
+                "age": 0,
+                "retained_count": 134,
+                "retention_rate": 1.0
+            },
+            {
+                "age": 1,
+                "retained_count": 134,
+                "retention_rate": 1.0
+            },
+            {
+                "age": 2,
+                "retained_count": 132,
+                "retention_rate": 0.9851
+            },
+            {
+                "age": 3,
+                "retained_count": 128,
+                "retention_rate": 0.9552
+            },
+            {
+                "age": 4,
+                "retained_count": 127,
+                "retention_rate": 0.9478
+            },
+            {
+                "age": 5,
+                "retained_count": 125,
+                "retention_rate": 0.9328
+            },
+            {
+                "age": 6,
+                "retained_count": 119,
+                "retention_rate": 0.8881
+            },
+            {
+                "age": 7,
+                "retained_count": 115,
+                "retention_rate": 0.8582
+            },
+            {
+                "age": 8,
+                "retained_count": 108,
+                "retention_rate": 0.806
+            },
+            {
+                "age": 9,
+                "retained_count": 103,
+                "retention_rate": 0.7687
+            },
+            {
+                "age": 10,
+                "retained_count": 102,
+                "retention_rate": 0.7612
+            },
+            {
+                "age": 11,
+                "retained_count": 99,
+                "retention_rate": 0.7388
+            },
+            {
+                "age": 12,
+                "retained_count": 93,
+                "retention_rate": 0.694
+            }
+        ]
+    },
+    {
+        "cohort_month": "2024-07",
+        "cohort_size": 155,
+        "retention": [
+            {
+                "age": 0,
+                "retained_count": 155,
+                "retention_rate": 1.0
+            },
+            {
+                "age": 1,
+                "retained_count": 155,
+                "retention_rate": 1.0
+            },
+            {
+                "age": 2,
+                "retained_count": 151,
+                "retention_rate": 0.9742
+            },
+            {
+                "age": 3,
+                "retained_count": 148,
+                "retention_rate": 0.9548
+            },
+            {
+                "age": 4,
+                "retained_count": 145,
+                "retention_rate": 0.9355
+            },
+            {
+                "age": 5,
+                "retained_count": 143,
+                "retention_rate": 0.9226
+            },
+            {
+                "age": 6,
+                "retained_count": 139,
+                "retention_rate": 0.8968
+            },
+            {
+                "age": 7,
+                "retained_count": 137,
+                "retention_rate": 0.8839
+            },
+            {
+                "age": 8,
+                "retained_count": 133,
+                "retention_rate": 0.8581
+            },
+            {
+                "age": 9,
+                "retained_count": 131,
+                "retention_rate": 0.8452
+            },
+            {
+                "age": 10,
+                "retained_count": 127,
+                "retention_rate": 0.8194
+            },
+            {
+                "age": 11,
+                "retained_count": 124,
+                "retention_rate": 0.8
+            },
+            {
+                "age": 12,
+                "retained_count": 119,
+                "retention_rate": 0.7677
+            }
+        ]
+    },
+    {
+        "cohort_month": "2024-08",
+        "cohort_size": 127,
+        "retention": [
+            {
+                "age": 0,
+                "retained_count": 127,
+                "retention_rate": 1.0
+            },
+            {
+                "age": 1,
+                "retained_count": 127,
+                "retention_rate": 1.0
+            },
+            {
+                "age": 2,
+                "retained_count": 127,
+                "retention_rate": 1.0
+            },
+            {
+                "age": 3,
+                "retained_count": 124,
+                "retention_rate": 0.9764
+            },
+            {
+                "age": 4,
+                "retained_count": 118,
+                "retention_rate": 0.9291
+            },
+            {
+                "age": 5,
+                "retained_count": 115,
+                "retention_rate": 0.9055
+            },
+            {
+                "age": 6,
+                "retained_count": 113,
+                "retention_rate": 0.8898
+            },
+            {
+                "age": 7,
+                "retained_count": 109,
+                "retention_rate": 0.8583
+            },
+            {
+                "age": 8,
+                "retained_count": 106,
+                "retention_rate": 0.8346
+            },
+            {
+                "age": 9,
+                "retained_count": 105,
+                "retention_rate": 0.8268
+            },
+            {
+                "age": 10,
+                "retained_count": 104,
+                "retention_rate": 0.8189
+            },
+            {
+                "age": 11,
+                "retained_count": 99,
+                "retention_rate": 0.7795
+            },
+            {
+                "age": 12,
+                "retained_count": 96,
+                "retention_rate": 0.7559
+            }
+        ]
+    },
+    {
+        "cohort_month": "2024-09",
+        "cohort_size": 140,
+        "retention": [
+            {
+                "age": 0,
+                "retained_count": 140,
+                "retention_rate": 1.0
+            },
+            {
+                "age": 1,
+                "retained_count": 140,
+                "retention_rate": 1.0
+            },
+            {
+                "age": 2,
+                "retained_count": 138,
+                "retention_rate": 0.9857
+            },
+            {
+                "age": 3,
+                "retained_count": 134,
+                "retention_rate": 0.9571
+            },
+            {
+                "age": 4,
+                "retained_count": 133,
+                "retention_rate": 0.95
+            },
+            {
+                "age": 5,
+                "retained_count": 130,
+                "retention_rate": 0.9286
+            },
+            {
+                "age": 6,
+                "retained_count": 127,
+                "retention_rate": 0.9071
+            },
+            {
+                "age": 7,
+                "retained_count": 123,
+                "retention_rate": 0.8786
+            },
+            {
+                "age": 8,
+                "retained_count": 121,
+                "retention_rate": 0.8643
+            },
+            {
+                "age": 9,
+                "retained_count": 120,
+                "retention_rate": 0.8571
+            },
+            {
+                "age": 10,
+                "retained_count": 118,
+                "retention_rate": 0.8429
+            },
+            {
+                "age": 11,
+                "retained_count": 111,
+                "retention_rate": 0.7929
+            },
+            {
+                "age": 12,
+                "retained_count": 107,
+                "retention_rate": 0.7643
+            }
+        ]
+    },
+    {
+        "cohort_month": "2024-10",
+        "cohort_size": 129,
+        "retention": [
+            {
+                "age": 0,
+                "retained_count": 129,
+                "retention_rate": 1.0
+            },
+            {
+                "age": 1,
+                "retained_count": 129,
+                "retention_rate": 1.0
+            },
+            {
+                "age": 2,
+                "retained_count": 127,
+                "retention_rate": 0.9845
+            },
+            {
+                "age": 3,
+                "retained_count": 118,
+                "retention_rate": 0.9147
+            },
+            {
+                "age": 4,
+                "retained_count": 115,
+                "retention_rate": 0.8915
+            },
+            {
+                "age": 5,
+                "retained_count": 112,
+                "retention_rate": 0.8682
+            },
+            {
+                "age": 6,
+                "retained_count": 109,
+                "retention_rate": 0.845
+            },
+            {
+                "age": 7,
+                "retained_count": 107,
+                "retention_rate": 0.8295
+            },
+            {
+                "age": 8,
+                "retained_count": 104,
+                "retention_rate": 0.8062
+            },
+            {
+                "age": 9,
+                "retained_count": 101,
+                "retention_rate": 0.7829
+            },
+            {
+                "age": 10,
+                "retained_count": 101,
+                "retention_rate": 0.7829
+            },
+            {
+                "age": 11,
+                "retained_count": 97,
+                "retention_rate": 0.7519
+            },
+            {
+                "age": 12,
+                "retained_count": 95,
+                "retention_rate": 0.7364
+            }
+        ]
+    },
+    {
+        "cohort_month": "2024-11",
+        "cohort_size": 134,
+        "retention": [
+            {
+                "age": 0,
+                "retained_count": 134,
+                "retention_rate": 1.0
+            },
+            {
+                "age": 1,
+                "retained_count": 134,
+                "retention_rate": 1.0
+            },
+            {
+                "age": 2,
+                "retained_count": 133,
+                "retention_rate": 0.9925
+            },
+            {
+                "age": 3,
+                "retained_count": 128,
+                "retention_rate": 0.9552
+            },
+            {
+                "age": 4,
+                "retained_count": 124,
+                "retention_rate": 0.9254
+            },
+            {
+                "age": 5,
+                "retained_count": 121,
+                "retention_rate": 0.903
+            },
+            {
+                "age": 6,
+                "retained_count": 120,
+                "retention_rate": 0.8955
+            },
+            {
+                "age": 7,
+                "retained_count": 118,
+                "retention_rate": 0.8806
+            },
+            {
+                "age": 8,
+                "retained_count": 114,
+                "retention_rate": 0.8507
+            },
+            {
+                "age": 9,
+                "retained_count": 111,
+                "retention_rate": 0.8284
+            },
+            {
+                "age": 10,
+                "retained_count": 107,
+                "retention_rate": 0.7985
+            },
+            {
+                "age": 11,
+                "retained_count": 102,
+                "retention_rate": 0.7612
+            },
+            {
+                "age": 12,
+                "retained_count": 99,
+                "retention_rate": 0.7388
+            }
+        ]
+    },
+    {
+        "cohort_month": "2024-12",
+        "cohort_size": 142,
+        "retention": [
+            {
+                "age": 0,
+                "retained_count": 142,
+                "retention_rate": 1.0
+            },
+            {
+                "age": 1,
+                "retained_count": 142,
+                "retention_rate": 1.0
+            },
+            {
+                "age": 2,
+                "retained_count": 136,
+                "retention_rate": 0.9577
+            },
+            {
+                "age": 3,
+                "retained_count": 133,
+                "retention_rate": 0.9366
+            },
+            {
+                "age": 4,
+                "retained_count": 129,
+                "retention_rate": 0.9085
+            },
+            {
+                "age": 5,
+                "retained_count": 123,
+                "retention_rate": 0.8662
+            },
+            {
+                "age": 6,
+                "retained_count": 118,
+                "retention_rate": 0.831
+            },
+            {
+                "age": 7,
+                "retained_count": 112,
+                "retention_rate": 0.7887
+            },
+            {
+                "age": 8,
+                "retained_count": 105,
+                "retention_rate": 0.7394
+            },
+            {
+                "age": 9,
+                "retained_count": 103,
+                "retention_rate": 0.7254
+            },
+            {
+                "age": 10,
+                "retained_count": 99,
+                "retention_rate": 0.6972
+            },
+            {
+                "age": 11,
+                "retained_count": 93,
+                "retention_rate": 0.6549
+            },
+            {
+                "age": 12,
+                "retained_count": 89,
+                "retention_rate": 0.6268
+            }
+        ]
+    },
+    {
+        "cohort_month": "2025-01",
+        "cohort_size": 125,
+        "retention": [
+            {
+                "age": 0,
+                "retained_count": 125,
+                "retention_rate": 1.0
+            },
+            {
+                "age": 1,
+                "retained_count": 125,
+                "retention_rate": 1.0
+            },
+            {
+                "age": 2,
+                "retained_count": 121,
+                "retention_rate": 0.968
+            },
+            {
+                "age": 3,
+                "retained_count": 118,
+                "retention_rate": 0.944
+            },
+            {
+                "age": 4,
+                "retained_count": 113,
+                "retention_rate": 0.904
+            },
+            {
+                "age": 5,
+                "retained_count": 110,
+                "retention_rate": 0.88
+            },
+            {
+                "age": 6,
+                "retained_count": 105,
+                "retention_rate": 0.84
+            },
+            {
+                "age": 7,
+                "retained_count": 99,
+                "retention_rate": 0.792
+            },
+            {
+                "age": 8,
+                "retained_count": 95,
+                "retention_rate": 0.76
+            },
+            {
+                "age": 9,
+                "retained_count": 90,
+                "retention_rate": 0.72
+            },
+            {
+                "age": 10,
+                "retained_count": 86,
+                "retention_rate": 0.688
+            },
+            {
+                "age": 11,
+                "retained_count": 79,
+                "retention_rate": 0.632
+            },
+            {
+                "age": 12,
+                "retained_count": 1,
+                "retention_rate": 0.008
+            }
+        ]
+    },
+    {
+        "cohort_month": "2025-02",
+        "cohort_size": 117,
+        "retention": [
+            {
+                "age": 0,
+                "retained_count": 117,
+                "retention_rate": 1.0
+            },
+            {
+                "age": 1,
+                "retained_count": 117,
+                "retention_rate": 1.0
+            },
+            {
+                "age": 2,
+                "retained_count": 115,
+                "retention_rate": 0.9829
+            },
+            {
+                "age": 3,
+                "retained_count": 110,
+                "retention_rate": 0.9402
+            },
+            {
+                "age": 4,
+                "retained_count": 104,
+                "retention_rate": 0.8889
+            },
+            {
+                "age": 5,
+                "retained_count": 95,
+                "retention_rate": 0.812
+            },
+            {
+                "age": 6,
+                "retained_count": 89,
+                "retention_rate": 0.7607
+            },
+            {
+                "age": 7,
+                "retained_count": 86,
+                "retention_rate": 0.735
+            },
+            {
+                "age": 8,
+                "retained_count": 81,
+                "retention_rate": 0.6923
+            },
+            {
+                "age": 9,
+                "retained_count": 73,
+                "retention_rate": 0.6239
+            },
+            {
+                "age": 10,
+                "retained_count": 72,
+                "retention_rate": 0.6154
+            },
+            {
+                "age": 11,
+                "retained_count": 2,
+                "retention_rate": 0.0171
+            },
+            {
+                "age": 12,
+                "retained_count": 0,
+                "retention_rate": 0.0
+            }
+        ]
+    },
+    {
+        "cohort_month": "2025-03",
+        "cohort_size": 153,
+        "retention": [
+            {
+                "age": 0,
+                "retained_count": 153,
+                "retention_rate": 1.0
+            },
+            {
+                "age": 1,
+                "retained_count": 153,
+                "retention_rate": 1.0
+            },
+            {
+                "age": 2,
+                "retained_count": 149,
+                "retention_rate": 0.9739
+            },
+            {
+                "age": 3,
+                "retained_count": 141,
+                "retention_rate": 0.9216
+            },
+            {
+                "age": 4,
+                "retained_count": 139,
+                "retention_rate": 0.9085
+            },
+            {
+                "age": 5,
+                "retained_count": 135,
+                "retention_rate": 0.8824
+            },
+            {
+                "age": 6,
+                "retained_count": 130,
+                "retention_rate": 0.8497
+            },
+            {
+                "age": 7,
+                "retained_count": 122,
+                "retention_rate": 0.7974
+            },
+            {
+                "age": 8,
+                "retained_count": 116,
+                "retention_rate": 0.7582
+            },
+            {
+                "age": 9,
+                "retained_count": 105,
+                "retention_rate": 0.6863
+            },
+            {
+                "age": 10,
+                "retained_count": 13,
+                "retention_rate": 0.085
+            },
+            {
+                "age": 11,
+                "retained_count": 0,
+                "retention_rate": 0.0
+            },
+            {
+                "age": 12,
+                "retained_count": 0,
+                "retention_rate": 0.0
+            }
+        ]
+    },
+    {
+        "cohort_month": "2025-04",
+        "cohort_size": 126,
+        "retention": [
+            {
+                "age": 0,
+                "retained_count": 126,
+                "retention_rate": 1.0
+            },
+            {
+                "age": 1,
+                "retained_count": 126,
+                "retention_rate": 1.0
+            },
+            {
+                "age": 2,
+                "retained_count": 124,
+                "retention_rate": 0.9841
+            },
+            {
+                "age": 3,
+                "retained_count": 119,
+                "retention_rate": 0.9444
+            },
+            {
+                "age": 4,
+                "retained_count": 114,
+                "retention_rate": 0.9048
+            },
+            {
+                "age": 5,
+                "retained_count": 105,
+                "retention_rate": 0.8333
+            },
+            {
+                "age": 6,
+                "retained_count": 99,
+                "retention_rate": 0.7857
+            },
+            {
+                "age": 7,
+                "retained_count": 94,
+                "retention_rate": 0.746
+            },
+            {
+                "age": 8,
+                "retained_count": 87,
+                "retention_rate": 0.6905
+            },
+            {
+                "age": 9,
+                "retained_count": 4,
+                "retention_rate": 0.0317
+            },
+            {
+                "age": 10,
+                "retained_count": 0,
+                "retention_rate": 0.0
+            },
+            {
+                "age": 11,
+                "retained_count": 0,
+                "retention_rate": 0.0
+            },
+            {
+                "age": 12,
+                "retained_count": 0,
+                "retention_rate": 0.0
+            }
+        ]
+    },
+    {
+        "cohort_month": "2025-05",
+        "cohort_size": 136,
+        "retention": [
+            {
+                "age": 0,
+                "retained_count": 136,
+                "retention_rate": 1.0
+            },
+            {
+                "age": 1,
+                "retained_count": 136,
+                "retention_rate": 1.0
+            },
+            {
+                "age": 2,
+                "retained_count": 130,
+                "retention_rate": 0.9559
+            },
+            {
+                "age": 3,
+                "retained_count": 120,
+                "retention_rate": 0.8824
+            },
+            {
+                "age": 4,
+                "retained_count": 111,
+                "retention_rate": 0.8162
+            },
+            {
+                "age": 5,
+                "retained_count": 99,
+                "retention_rate": 0.7279
+            },
+            {
+                "age": 6,
+                "retained_count": 91,
+                "retention_rate": 0.6691
+            },
+            {
+                "age": 7,
+                "retained_count": 81,
+                "retention_rate": 0.5956
+            },
+            {
+                "age": 8,
+                "retained_count": 6,
+                "retention_rate": 0.0441
+            },
+            {
+                "age": 9,
+                "retained_count": 0,
+                "retention_rate": 0.0
+            },
+            {
+                "age": 10,
+                "retained_count": 0,
+                "retention_rate": 0.0
+            },
+            {
+                "age": 11,
+                "retained_count": 0,
+                "retention_rate": 0.0
+            },
+            {
+                "age": 12,
+                "retained_count": 0,
+                "retention_rate": 0.0
+            }
+        ]
+    },
+    {
+        "cohort_month": "2025-06",
+        "cohort_size": 137,
+        "retention": [
+            {
+                "age": 0,
+                "retained_count": 137,
+                "retention_rate": 1.0
+            },
+            {
+                "age": 1,
+                "retained_count": 137,
+                "retention_rate": 1.0
+            },
+            {
+                "age": 2,
+                "retained_count": 129,
+                "retention_rate": 0.9416
+            },
+            {
+                "age": 3,
+                "retained_count": 122,
+                "retention_rate": 0.8905
+            },
+            {
+                "age": 4,
+                "retained_count": 111,
+                "retention_rate": 0.8102
+            },
+            {
+                "age": 5,
+                "retained_count": 101,
+                "retention_rate": 0.7372
+            },
+            {
+                "age": 6,
+                "retained_count": 88,
+                "retention_rate": 0.6423
+            },
+            {
+                "age": 7,
+                "retained_count": 4,
+                "retention_rate": 0.0292
+            },
+            {
+                "age": 8,
+                "retained_count": 0,
+                "retention_rate": 0.0
+            },
+            {
+                "age": 9,
+                "retained_count": 0,
+                "retention_rate": 0.0
+            },
+            {
+                "age": 10,
+                "retained_count": 0,
+                "retention_rate": 0.0
+            },
+            {
+                "age": 11,
+                "retained_count": 0,
+                "retention_rate": 0.0
+            },
+            {
+                "age": 12,
+                "retained_count": 0,
+                "retention_rate": 0.0
+            }
+        ]
+    },
+    {
+        "cohort_month": "2025-07",
+        "cohort_size": 140,
+        "retention": [
+            {
+                "age": 0,
+                "retained_count": 140,
+                "retention_rate": 1.0
+            },
+            {
+                "age": 1,
+                "retained_count": 140,
+                "retention_rate": 1.0
+            },
+            {
+                "age": 2,
+                "retained_count": 129,
+                "retention_rate": 0.9214
+            },
+            {
+                "age": 3,
+                "retained_count": 121,
+                "retention_rate": 0.8643
+            },
+            {
+                "age": 4,
+                "retained_count": 107,
+                "retention_rate": 0.7643
+            },
+            {
+                "age": 5,
+                "retained_count": 96,
+                "retention_rate": 0.6857
+            },
+            {
+                "age": 6,
+                "retained_count": 6,
+                "retention_rate": 0.0429
+            },
+            {
+                "age": 7,
+                "retained_count": 0,
+                "retention_rate": 0.0
+            },
+            {
+                "age": 8,
+                "retained_count": 0,
+                "retention_rate": 0.0
+            },
+            {
+                "age": 9,
+                "retained_count": 0,
+                "retention_rate": 0.0
+            },
+            {
+                "age": 10,
+                "retained_count": 0,
+                "retention_rate": 0.0
+            },
+            {
+                "age": 11,
+                "retained_count": 0,
+                "retention_rate": 0.0
+            },
+            {
+                "age": 12,
+                "retained_count": 0,
+                "retention_rate": 0.0
+            }
+        ]
+    },
+    {
+        "cohort_month": "2025-08",
+        "cohort_size": 171,
+        "retention": [
+            {
+                "age": 0,
+                "retained_count": 171,
+                "retention_rate": 1.0
+            },
+            {
+                "age": 1,
+                "retained_count": 171,
+                "retention_rate": 1.0
+            },
+            {
+                "age": 2,
+                "retained_count": 158,
+                "retention_rate": 0.924
+            },
+            {
+                "age": 3,
+                "retained_count": 137,
+                "retention_rate": 0.8012
+            },
+            {
+                "age": 4,
+                "retained_count": 115,
+                "retention_rate": 0.6725
+            },
+            {
+                "age": 5,
+                "retained_count": 8,
+                "retention_rate": 0.0468
+            },
+            {
+                "age": 6,
+                "retained_count": 0,
+                "retention_rate": 0.0
+            },
+            {
+                "age": 7,
+                "retained_count": 0,
+                "retention_rate": 0.0
+            },
+            {
+                "age": 8,
+                "retained_count": 0,
+                "retention_rate": 0.0
+            },
+            {
+                "age": 9,
+                "retained_count": 0,
+                "retention_rate": 0.0
+            },
+            {
+                "age": 10,
+                "retained_count": 0,
+                "retention_rate": 0.0
+            },
+            {
+                "age": 11,
+                "retained_count": 0,
+                "retention_rate": 0.0
+            },
+            {
+                "age": 12,
+                "retained_count": 0,
+                "retention_rate": 0.0
+            }
+        ]
+    },
+    {
+        "cohort_month": "2025-09",
+        "cohort_size": 121,
+        "retention": [
+            {
+                "age": 0,
+                "retained_count": 121,
+                "retention_rate": 1.0
+            },
+            {
+                "age": 1,
+                "retained_count": 121,
+                "retention_rate": 1.0
+            },
+            {
+                "age": 2,
+                "retained_count": 104,
+                "retention_rate": 0.8595
+            },
+            {
+                "age": 3,
+                "retained_count": 87,
+                "retention_rate": 0.719
+            },
+            {
+                "age": 4,
+                "retained_count": 4,
+                "retention_rate": 0.0331
+            },
+            {
+                "age": 5,
+                "retained_count": 1,
+                "retention_rate": 0.0083
+            },
+            {
+                "age": 6,
+                "retained_count": 0,
+                "retention_rate": 0.0
+            },
+            {
+                "age": 7,
+                "retained_count": 0,
+                "retention_rate": 0.0
+            },
+            {
+                "age": 8,
+                "retained_count": 0,
+                "retention_rate": 0.0
+            },
+            {
+                "age": 9,
+                "retained_count": 0,
+                "retention_rate": 0.0
+            },
+            {
+                "age": 10,
+                "retained_count": 0,
+                "retention_rate": 0.0
+            },
+            {
+                "age": 11,
+                "retained_count": 0,
+                "retention_rate": 0.0
+            },
+            {
+                "age": 12,
+                "retained_count": 0,
+                "retention_rate": 0.0
+            }
+        ]
+    },
+    {
+        "cohort_month": "2025-10",
+        "cohort_size": 146,
+        "retention": [
+            {
+                "age": 0,
+                "retained_count": 146,
+                "retention_rate": 1.0
+            },
+            {
+                "age": 1,
+                "retained_count": 146,
+                "retention_rate": 1.0
+            },
+            {
+                "age": 2,
+                "retained_count": 103,
+                "retention_rate": 0.7055
+            },
+            {
+                "age": 3,
+                "retained_count": 5,
+                "retention_rate": 0.0342
+            },
+            {
+                "age": 4,
+                "retained_count": 1,
+                "retention_rate": 0.0068
+            },
+            {
+                "age": 5,
+                "retained_count": 1,
+                "retention_rate": 0.0068
+            },
+            {
+                "age": 6,
+                "retained_count": 0,
+                "retention_rate": 0.0
+            },
+            {
+                "age": 7,
+                "retained_count": 0,
+                "retention_rate": 0.0
+            },
+            {
+                "age": 8,
+                "retained_count": 0,
+                "retention_rate": 0.0
+            },
+            {
+                "age": 9,
+                "retained_count": 0,
+                "retention_rate": 0.0
+            },
+            {
+                "age": 10,
+                "retained_count": 0,
+                "retention_rate": 0.0
+            },
+            {
+                "age": 11,
+                "retained_count": 0,
+                "retention_rate": 0.0
+            },
+            {
+                "age": 12,
+                "retained_count": 0,
+                "retention_rate": 0.0
+            }
+        ]
+    },
+    {
+        "cohort_month": "2025-11",
+        "cohort_size": 137,
+        "retention": [
+            {
+                "age": 0,
+                "retained_count": 137,
+                "retention_rate": 1.0
+            },
+            {
+                "age": 1,
+                "retained_count": 137,
+                "retention_rate": 1.0
+            },
+            {
+                "age": 2,
+                "retained_count": 4,
+                "retention_rate": 0.0292
+            },
+            {
+                "age": 3,
+                "retained_count": 1,
+                "retention_rate": 0.0073
+            },
+            {
+                "age": 4,
+                "retained_count": 1,
+                "retention_rate": 0.0073
+            },
+            {
+                "age": 5,
+                "retained_count": 1,
+                "retention_rate": 0.0073
+            },
+            {
+                "age": 6,
+                "retained_count": 0,
+                "retention_rate": 0.0
+            },
+            {
+                "age": 7,
+                "retained_count": 0,
+                "retention_rate": 0.0
+            },
+            {
+                "age": 8,
+                "retained_count": 0,
+                "retention_rate": 0.0
+            },
+            {
+                "age": 9,
+                "retained_count": 0,
+                "retention_rate": 0.0
+            },
+            {
+                "age": 10,
+                "retained_count": 0,
+                "retention_rate": 0.0
+            },
+            {
+                "age": 11,
+                "retained_count": 0,
+                "retention_rate": 0.0
+            },
+            {
+                "age": 12,
+                "retained_count": 0,
+                "retention_rate": 0.0
+            }
+        ]
+    },
+    {
+        "cohort_month": "2025-12",
+        "cohort_size": 154,
+        "retention": [
+            {
+                "age": 0,
+                "retained_count": 154,
+                "retention_rate": 1.0
+            },
+            {
+                "age": 1,
+                "retained_count": 154,
+                "retention_rate": 1.0
+            },
+            {
+                "age": 2,
+                "retained_count": 0,
+                "retention_rate": 0.0
+            },
+            {
+                "age": 3,
+                "retained_count": 0,
+                "retention_rate": 0.0
+            },
+            {
+                "age": 4,
+                "retained_count": 0,
+                "retention_rate": 0.0
+            },
+            {
+                "age": 5,
+                "retained_count": 0,
+                "retention_rate": 0.0
+            },
+            {
+                "age": 6,
+                "retained_count": 0,
+                "retention_rate": 0.0
+            },
+            {
+                "age": 7,
+                "retained_count": 0,
+                "retention_rate": 0.0
+            },
+            {
+                "age": 8,
+                "retained_count": 0,
+                "retention_rate": 0.0
+            },
+            {
+                "age": 9,
+                "retained_count": 0,
+                "retention_rate": 0.0
+            },
+            {
+                "age": 10,
+                "retained_count": 0,
+                "retention_rate": 0.0
+            },
+            {
+                "age": 11,
+                "retained_count": 0,
+                "retention_rate": 0.0
+            },
+            {
+                "age": 12,
+                "retained_count": 0,
+                "retention_rate": 0.0
+            }
+        ]
+    }
+]

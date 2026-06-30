@@ -1,0 +1,88 @@
+{
+    "plan": [
+        {
+            "segment": "Basic",
+            "total_customers": 1724,
+            "churned_customers": 805,
+            "churn_rate": 0.4669
+        },
+        {
+            "segment": "Enterprise",
+            "total_customers": 1696,
+            "churned_customers": 495,
+            "churn_rate": 0.2919
+        },
+        {
+            "segment": "Pro",
+            "total_customers": 1580,
+            "churned_customers": 542,
+            "churn_rate": 0.343
+        }
+    ],
+    "billing_interval": [
+        {
+            "segment": "Annually",
+            "total_customers": 2472,
+            "churned_customers": 708,
+            "churn_rate": 0.2864
+        },
+        {
+            "segment": "Monthly",
+            "total_customers": 2528,
+            "churned_customers": 1134,
+            "churn_rate": 0.4486
+        }
+    ],
+    "region": [
+        {
+            "segment": "Central",
+            "total_customers": 1205,
+            "churned_customers": 462,
+            "churn_rate": 0.3834
+        },
+        {
+            "segment": "East",
+            "total_customers": 1294,
+            "churned_customers": 488,
+            "churn_rate": 0.3771
+        },
+        {
+            "segment": "South",
+            "total_customers": 1243,
+            "churned_customers": 432,
+            "churn_rate": 0.3475
+        },
+        {
+            "segment": "West",
+            "total_customers": 1258,
+            "churned_customers": 460,
+            "churn_rate": 0.3657
+        }
+    ],
+    "nps": [
+        {
+            "segment": "Detractors (1-6)",
+            "total_customers": 2093,
+            "churned_customers": 1396,
+            "churn_rate": 0.667
+        },
+        {
+            "segment": "No Response",
+            "total_customers": 758,
+            "churned_customers": 292,
+            "churn_rate": 0.3852
+        },
+        {
+            "segment": "Passives (7-8)",
+            "total_customers": 1443,
+            "churned_customers": 129,
+            "churn_rate": 0.0894
+        },
+        {
+            "segment": "Promoters (9-10)",
+            "total_customers": 706,
+            "churned_customers": 25,
+            "churn_rate": 0.0354
+        }
+    ]
+}

@@ -1,0 +1,290 @@
+[
+    {
+        "month": "2023-01",
+        "active_customers": 144,
+        "signups": 144,
+        "churns": 0,
+        "churn_rate": 0.0,
+        "mrr": 16088.8
+    },
+    {
+        "month": "2023-02",
+        "active_customers": 263,
+        "signups": 119,
+        "churns": 3,
+        "churn_rate": 0.0114,
+        "mrr": 28439.8
+    },
+    {
+        "month": "2023-03",
+        "active_customers": 408,
+        "signups": 148,
+        "churns": 3,
+        "churn_rate": 0.0074,
+        "mrr": 45063.6
+    },
+    {
+        "month": "2023-04",
+        "active_customers": 531,
+        "signups": 126,
+        "churns": 2,
+        "churn_rate": 0.0038,
+        "mrr": 59587.8
+    },
+    {
+        "month": "2023-05",
+        "active_customers": 660,
+        "signups": 131,
+        "churns": 9,
+        "churn_rate": 0.0136,
+        "mrr": 74427.6
+    },
+    {
+        "month": "2023-06",
+        "active_customers": 805,
+        "signups": 154,
+        "churns": 3,
+        "churn_rate": 0.0037,
+        "mrr": 89120.2
+    },
+    {
+        "month": "2023-07",
+        "active_customers": 961,
+        "signups": 159,
+        "churns": 7,
+        "churn_rate": 0.0073,
+        "mrr": 106065.0
+    },
+    {
+        "month": "2023-08",
+        "active_customers": 1104,
+        "signups": 150,
+        "churns": 10,
+        "churn_rate": 0.0091,
+        "mrr": 120113.8
+    },
+    {
+        "month": "2023-09",
+        "active_customers": 1239,
+        "signups": 145,
+        "churns": 20,
+        "churn_rate": 0.0161,
+        "mrr": 135042.6
+    },
+    {
+        "month": "2023-10",
+        "active_customers": 1356,
+        "signups": 137,
+        "churns": 13,
+        "churn_rate": 0.0096,
+        "mrr": 147806.2
+    },
+    {
+        "month": "2023-11",
+        "active_customers": 1463,
+        "signups": 120,
+        "churns": 13,
+        "churn_rate": 0.0089,
+        "mrr": 159664.6
+    },
+    {
+        "month": "2023-12",
+        "active_customers": 1603,
+        "signups": 153,
+        "churns": 22,
+        "churn_rate": 0.0137,
+        "mrr": 174779.8
+    },
+    {
+        "month": "2024-01",
+        "active_customers": 1718,
+        "signups": 137,
+        "churns": 30,
+        "churn_rate": 0.0175,
+        "mrr": 188031.6
+    },
+    {
+        "month": "2024-02",
+        "active_customers": 1819,
+        "signups": 131,
+        "churns": 27,
+        "churn_rate": 0.0148,
+        "mrr": 198401.6
+    },
+    {
+        "month": "2024-03",
+        "active_customers": 1950,
+        "signups": 158,
+        "churns": 26,
+        "churn_rate": 0.0133,
+        "mrr": 210348.0
+    },
+    {
+        "month": "2024-04",
+        "active_customers": 2055,
+        "signups": 131,
+        "churns": 21,
+        "churn_rate": 0.0102,
+        "mrr": 221609.4
+    },
+    {
+        "month": "2024-05",
+        "active_customers": 2167,
+        "signups": 133,
+        "churns": 33,
+        "churn_rate": 0.0152,
+        "mrr": 232883.2
+    },
+    {
+        "month": "2024-06",
+        "active_customers": 2268,
+        "signups": 134,
+        "churns": 33,
+        "churn_rate": 0.0146,
+        "mrr": 245071.4
+    },
+    {
+        "month": "2024-07",
+        "active_customers": 2390,
+        "signups": 155,
+        "churns": 32,
+        "churn_rate": 0.0134,
+        "mrr": 260399.4
+    },
+    {
+        "month": "2024-08",
+        "active_customers": 2485,
+        "signups": 127,
+        "churns": 41,
+        "churn_rate": 0.0165,
+        "mrr": 269636.2
+    },
+    {
+        "month": "2024-09",
+        "active_customers": 2584,
+        "signups": 140,
+        "churns": 39,
+        "churn_rate": 0.0151,
+        "mrr": 280594.0
+    },
+    {
+        "month": "2024-10",
+        "active_customers": 2674,
+        "signups": 129,
+        "churns": 36,
+        "churn_rate": 0.0135,
+        "mrr": 292180.6
+    },
+    {
+        "month": "2024-11",
+        "active_customers": 2772,
+        "signups": 134,
+        "churns": 45,
+        "churn_rate": 0.0162,
+        "mrr": 302941.4
+    },
+    {
+        "month": "2024-12",
+        "active_customers": 2869,
+        "signups": 142,
+        "churns": 44,
+        "churn_rate": 0.0153,
+        "mrr": 313090.0
+    },
+    {
+        "month": "2025-01",
+        "active_customers": 2950,
+        "signups": 125,
+        "churns": 56,
+        "churn_rate": 0.019,
+        "mrr": 323544.2
+    },
+    {
+        "month": "2025-02",
+        "active_customers": 3011,
+        "signups": 117,
+        "churns": 50,
+        "churn_rate": 0.0166,
+        "mrr": 328482.0
+    },
+    {
+        "month": "2025-03",
+        "active_customers": 3114,
+        "signups": 153,
+        "churns": 74,
+        "churn_rate": 0.0238,
+        "mrr": 338627.8
+    },
+    {
+        "month": "2025-04",
+        "active_customers": 3166,
+        "signups": 126,
+        "churns": 46,
+        "churn_rate": 0.0145,
+        "mrr": 345811.0
+    },
+    {
+        "month": "2025-05",
+        "active_customers": 3256,
+        "signups": 136,
+        "churns": 76,
+        "churn_rate": 0.0233,
+        "mrr": 355948.8
+    },
+    {
+        "month": "2025-06",
+        "active_customers": 3317,
+        "signups": 137,
+        "churns": 79,
+        "churn_rate": 0.0238,
+        "mrr": 363637.8
+    },
+    {
+        "month": "2025-07",
+        "active_customers": 3378,
+        "signups": 140,
+        "churns": 92,
+        "churn_rate": 0.0272,
+        "mrr": 370246.6
+    },
+    {
+        "month": "2025-08",
+        "active_customers": 3457,
+        "signups": 171,
+        "churns": 110,
+        "churn_rate": 0.0318,
+        "mrr": 382114.8
+    },
+    {
+        "month": "2025-09",
+        "active_customers": 3468,
+        "signups": 121,
+        "churns": 105,
+        "churn_rate": 0.0303,
+        "mrr": 384931.6
+    },
+    {
+        "month": "2025-10",
+        "active_customers": 3509,
+        "signups": 146,
+        "churns": 143,
+        "churn_rate": 0.0408,
+        "mrr": 390720.4
+    },
+    {
+        "month": "2025-11",
+        "active_customers": 3503,
+        "signups": 137,
+        "churns": 171,
+        "churn_rate": 0.0488,
+        "mrr": 393514.6
+    },
+    {
+        "month": "2025-12",
+        "active_customers": 3486,
+        "signups": 154,
+        "churns": 312,
+        "churn_rate": 0.0895,
+        "mrr": 393590.2
+    }
+]

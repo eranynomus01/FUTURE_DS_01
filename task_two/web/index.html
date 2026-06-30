@@ -1,0 +1,470 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NexusRetention SaaS Analytics Dashboard</title>
+    <!-- Google Fonts: Outfit -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <!-- FontAwesome for Premium Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Chart.js CDN -->
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="app-container">
+        <!-- Sidebar Navigation -->
+        <aside class="sidebar">
+            <div class="brand">
+                <div class="brand-logo">
+                    <i class="fa-solid fa-users-gear"></i>
+                    <span>NEXUS<span class="highlight">RETENTION</span></span>
+                </div>
+            </div>
+            <nav class="sidebar-nav">
+                <ul>
+                    <li class="active" data-tab="overview"><a href="#"><i class="fa-solid fa-chart-pie"></i> Overview</a></li>
+                    <li data-tab="factors"><a href="#"><i class="fa-solid fa-triangle-exclamation"></i> Churn Factors</a></li>
+                    <li data-tab="cohorts"><a href="#"><i class="fa-solid fa-table-cells"></i> Cohort Analysis</a></li>
+                    <li data-tab="explorer"><a href="#"><i class="fa-solid fa-database"></i> Subscriber Explorer</a></li>
+                    <li data-tab="insights"><a href="#"><i class="fa-solid fa-lightbulb"></i> Insights & Strategy</a></li>
+                </ul>
+            </nav>
+            <div class="sidebar-footer">
+                <div class="user-profile">
+                    <div class="avatar"><i class="fa-solid fa-user-shield"></i></div>
+                    <div class="user-info">
+                        <span class="user-name">Retention Team</span>
+                        <span class="user-role">Growth Analyst</span>
+                    </div>
+                </div>
+            </div>
+        </aside>
+
+        <!-- Main Content Area -->
+        <main class="main-content">
+            <!-- Top Navigation / Header -->
+            <header class="header">
+                <div class="header-left">
+                    <h1>SaaS Subscriber Intelligence</h1>
+                    <p class="subtitle">Cohort retention modeling, churn drivers, and customer lifetime value optimization</p>
+                </div>
+                
+                <!-- Dynamic Filters Panel -->
+                <div class="filters-panel">
+                    <div class="filter-item">
+                        <label for="filter-plan"><i class="fa-solid fa-crown"></i> Plan</label>
+                        <select id="filter-plan">
+                            <option value="all">All Plans</option>
+                            <option value="Basic">Basic</option>
+                            <option value="Pro">Pro</option>
+                            <option value="Enterprise">Enterprise</option>
+                        </select>
+                    </div>
+                    <div class="filter-item">
+                        <label for="filter-interval"><i class="fa-regular fa-calendar-days"></i> Billing</label>
+                        <select id="filter-interval">
+                            <option value="all">All Intervals</option>
+                            <option value="Monthly">Monthly</option>
+                            <option value="Annually">Annually</option>
+                        </select>
+                    </div>
+                    <div class="filter-item">
+                        <label for="filter-region"><i class="fa-solid fa-globe"></i> Region</label>
+                        <select id="filter-region">
+                            <option value="all">All Regions</option>
+                            <option value="East">East</option>
+                            <option value="West">West</option>
+                            <option value="Central">Central</option>
+                            <option value="South">South</option>
+                        </select>
+                    </div>
+                    <button id="reset-filters" class="btn-reset" title="Reset Filters">
+                        <i class="fa-solid fa-rotate-left"></i>
+                    </button>
+                </div>
+            </header>
+
+            <!-- Dashboard Tabs -->
+            
+            <!-- TAB 1: OVERVIEW -->
+            <section id="tab-overview" class="tab-content active">
+                <!-- KPI Scorecard -->
+                <div class="kpi-grid">
+                    <div class="kpi-card" id="kpi-customers">
+                        <div class="kpi-header">
+                            <span class="kpi-title">Active Customers</span>
+                            <div class="kpi-icon customers"><i class="fa-solid fa-users"></i></div>
+                        </div>
+                        <div class="kpi-value">0</div>
+                        <div class="kpi-footer">
+                            <span class="trend neutral" id="kpi-customers-sub"><i class="fa-solid fa-user-check"></i> 0 historical</span>
+                        </div>
+                        <div class="glow-effect"></div>
+                    </div>
+                    
+                    <div class="kpi-card" id="kpi-mrr">
+                        <div class="kpi-header">
+                            <span class="kpi-title">Monthly Recurring Revenue</span>
+                            <div class="kpi-icon mrr"><i class="fa-solid fa-sack-dollar"></i></div>
+                        </div>
+                        <div class="kpi-value">$0.00</div>
+                        <div class="kpi-footer">
+                            <span class="trend positive" id="kpi-mrr-sub"><i class="fa-solid fa-arrow-trend-up"></i> Active MRR</span>
+                        </div>
+                        <div class="glow-effect"></div>
+                    </div>
+
+                    <div class="kpi-card" id="kpi-churn">
+                        <div class="kpi-header">
+                            <span class="kpi-title">Churn Rate</span>
+                            <div class="kpi-icon churn"><i class="fa-solid fa-user-minus"></i></div>
+                        </div>
+                        <div class="kpi-value">0.00%</div>
+                        <div class="kpi-footer">
+                            <span class="trend positive" id="kpi-churn-sub"><i class="fa-solid fa-bullseye"></i> target: &lt; 20%</span>
+                        </div>
+                        <div class="glow-effect"></div>
+                    </div>
+
+                    <div class="kpi-card" id="kpi-ltv">
+                        <div class="kpi-header">
+                            <span class="kpi-title">Avg Customer LTV</span>
+                            <div class="kpi-icon ltv"><i class="fa-solid fa-gem"></i></div>
+                        </div>
+                        <div class="kpi-value">$0.00</div>
+                        <div class="kpi-footer">
+                            <span class="trend neutral" id="kpi-ltv-sub"><i class="fa-solid fa-calendar-day"></i> Tenure: 0.0 mo</span>
+                        </div>
+                        <div class="glow-effect"></div>
+                    </div>
+                </div>
+
+                <!-- Primary Analytical Charts -->
+                <div class="chart-row primary-row">
+                    <!-- Trend Chart -->
+                    <div class="chart-card glass-panel flex-2">
+                        <div class="card-header">
+                            <h2>Monthly MRR & Subscriber Trajectory</h2>
+                            <p class="card-desc">Active subscriber base growth compared against monthly churned accounts</p>
+                        </div>
+                        <div class="chart-container">
+                            <canvas id="chart-trends"></canvas>
+                        </div>
+                    </div>
+                    
+                    <!-- Regional Shares -->
+                    <div class="chart-card glass-panel flex-1">
+                        <div class="card-header">
+                            <h2>Geographic Share</h2>
+                            <p class="card-desc">Distribution of active subscriptions by geographic region</p>
+                        </div>
+                        <div class="chart-container donut">
+                            <canvas id="chart-regional"></canvas>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Secondary Row -->
+                <div class="chart-row secondary-row">
+                    <!-- Cohort Curve Overview -->
+                    <div class="chart-card glass-panel flex-1">
+                        <div class="card-header">
+                            <h2>Average Customer Survival Curve</h2>
+                            <p class="card-desc">Average percentage of subscribers retained by month of tenure</p>
+                        </div>
+                        <div class="chart-container">
+                            <canvas id="chart-survival"></canvas>
+                        </div>
+                    </div>
+
+                    <!-- Usage vs Support Tickets Scatter -->
+                    <div class="chart-card glass-panel flex-1">
+                        <div class="card-header">
+                            <h2>Engagement vs. Support Ticket Matrix</h2>
+                            <p class="card-desc">Scatter distribution showing Churned vs. Active customers by ticket counts and usage logins</p>
+                        </div>
+                        <div class="chart-container">
+                            <canvas id="chart-engagement"></canvas>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- TAB 2: CHURN FACTORS -->
+            <section id="tab-factors" class="tab-content">
+                <div class="chart-row primary-row">
+                    <!-- Churn Reasons Horizontal Bar -->
+                    <div class="chart-card glass-panel flex-3">
+                        <div class="card-header">
+                            <h2>Primary Reasons for Customer Churn</h2>
+                            <p class="card-desc">Exit survey responses categorizing why customers left the platform</p>
+                        </div>
+                        <div class="chart-container">
+                            <canvas id="chart-churn-reasons"></canvas>
+                        </div>
+                    </div>
+
+                    <!-- NPS Distribution -->
+                    <div class="chart-card glass-panel flex-2">
+                        <div class="card-header">
+                            <h2>NPS Score Segments vs. Churn Rate</h2>
+                            <p class="card-desc">Correlation between customer Net Promoter Scores and attrition rates</p>
+                        </div>
+                        <div class="chart-container">
+                            <canvas id="chart-nps-churn"></canvas>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="chart-row secondary-row">
+                    <!-- Churn by Plan -->
+                    <div class="chart-card glass-panel flex-1">
+                        <div class="card-header">
+                            <h2>Churn Rate by Subscription Plan</h2>
+                            <p class="card-desc">Basic vs. Pro vs. Enterprise risk profile</p>
+                        </div>
+                        <div class="chart-container">
+                            <canvas id="chart-plan-churn"></canvas>
+                        </div>
+                    </div>
+
+                    <!-- Churn by Billing Interval -->
+                    <div class="chart-card glass-panel flex-1">
+                        <div class="card-header">
+                            <h2>Churn Rate by Billing Interval</h2>
+                            <p class="card-desc">Contrast between Monthly and Annual contracts</p>
+                        </div>
+                        <div class="chart-container">
+                            <canvas id="chart-billing-churn"></canvas>
+                        </div>
+                    </div>
+
+                    <!-- Churn by Tickets Band -->
+                    <div class="chart-card glass-panel flex-1">
+                        <div class="card-header">
+                            <h2>Churn Risk by Support Tickets</h2>
+                            <p class="card-desc">Attrition rate compared against support ticket volume</p>
+                        </div>
+                        <div class="chart-container">
+                            <canvas id="chart-tickets-churn"></canvas>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- TAB 3: COHORT ANALYSIS -->
+            <section id="tab-cohorts" class="tab-content">
+                <div class="glass-panel cohort-panel">
+                    <div class="cohort-header-row">
+                        <div class="cohort-title-area">
+                            <h2>Cohort Retention Heatmap (%)</h2>
+                            <p class="cohort-desc">Tracking signup cohorts month-by-month and their survival rates over a 12-month lifetime</p>
+                        </div>
+                        <div class="cohort-legend">
+                            <span class="legend-item"><span class="legend-box level-100"></span> 90%+</span>
+                            <span class="legend-item"><span class="legend-box level-75"></span> 70%-90%</span>
+                            <span class="legend-item"><span class="legend-box level-50"></span> 50%-70%</span>
+                            <span class="legend-item"><span class="legend-box level-25"></span> 30%-50%</span>
+                            <span class="legend-item"><span class="legend-box level-0"></span> &lt; 30%</span>
+                        </div>
+                    </div>
+                    
+                    <div class="cohort-table-wrapper">
+                        <table class="cohort-table" id="table-cohort">
+                            <thead>
+                                <tr>
+                                    <th>Cohort Month</th>
+                                    <th>Subscribers</th>
+                                    <th class="cohort-month-col">M0</th>
+                                    <th class="cohort-month-col">M1</th>
+                                    <th class="cohort-month-col">M2</th>
+                                    <th class="cohort-month-col">M3</th>
+                                    <th class="cohort-month-col">M4</th>
+                                    <th class="cohort-month-col">M5</th>
+                                    <th class="cohort-month-col">M6</th>
+                                    <th class="cohort-month-col">M7</th>
+                                    <th class="cohort-month-col">M8</th>
+                                    <th class="cohort-month-col">M9</th>
+                                    <th class="cohort-month-col">M10</th>
+                                    <th class="cohort-month-col">M11</th>
+                                    <th class="cohort-month-col">M12</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <!-- Dynamic content rendered by JS -->
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </section>
+
+            <!-- TAB 4: SUBSCRIBER EXPLORER -->
+            <section id="tab-explorer" class="tab-content">
+                <div class="glass-panel search-panel">
+                    <div class="explorer-toolbar">
+                        <div class="search-box">
+                            <i class="fa-solid fa-magnifying-glass"></i>
+                            <input type="text" id="explorer-search" placeholder="Search customer ID, name, region, churn reasons...">
+                        </div>
+                        
+                        <div class="filter-controls-group">
+                            <select id="explorer-filter-status" class="explorer-select">
+                                <option value="all">All Statuses</option>
+                                <option value="Active">Active Only</option>
+                                <option value="Churned">Churned Only</option>
+                            </select>
+                            <select id="explorer-filter-plan" class="explorer-select">
+                                <option value="all">All Plans</option>
+                                <option value="Basic">Basic</option>
+                                <option value="Pro">Pro</option>
+                                <option value="Enterprise">Enterprise</option>
+                            </select>
+                        </div>
+                        
+                        <div class="toolbar-stats">
+                            Showing <span id="explorer-row-count">0</span> accounts
+                        </div>
+                    </div>
+                    
+                    <div class="table-container main-explorer-table-container">
+                        <table class="data-table" id="table-explorer">
+                            <thead>
+                                <tr>
+                                    <th data-sort="customer_id" class="sortable">Customer ID <i class="fa-solid fa-sort"></i></th>
+                                    <th>Customer Name</th>
+                                    <th>Region</th>
+                                    <th data-sort="signup_date" class="sortable">Signup Date <i class="fa-solid fa-sort"></i></th>
+                                    <th>Plan</th>
+                                    <th>Billing</th>
+                                    <th>Status</th>
+                                    <th data-sort="monthly_charges" class="sortable num-col">Monthly <i class="fa-solid fa-sort"></i></th>
+                                    <th data-sort="total_charges" class="sortable num-col">Total <i class="fa-solid fa-sort"></i></th>
+                                    <th data-sort="support_tickets" class="sortable num-col">Tickets <i class="fa-solid fa-sort"></i></th>
+                                    <th data-sort="usage_frequency" class="sortable num-col">Usage <i class="fa-solid fa-sort"></i></th>
+                                    <th data-sort="nps_score" class="sortable num-col">NPS <i class="fa-solid fa-sort"></i></th>
+                                    <th>Churn Reason</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <!-- Dynamic subscriber rows -->
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </section>
+
+            <!-- TAB 5: INSIGHTS & STRATEGY -->
+            <section id="tab-insights" class="tab-content">
+                <div class="insights-grid">
+                    <!-- Exec Summary -->
+                    <div class="glass-panel insight-card span-all">
+                        <div class="insight-header">
+                            <i class="fa-solid fa-gem text-accent-cyan"></i>
+                            <h2>Executive Churn & Retention Summary</h2>
+                        </div>
+                        <div class="insight-body">
+                            <p>An in-depth retention analysis of our subscription customer database provides critical warnings and strategic pathways for growth. Over the 2023–2025 period, we tracked a historical customer base of 5,000 customers. While our active subscriber MRR stands at a healthy level, our overall attrition rates represent a substantial drag on enterprise value. By mapping subscriber behaviors (usage, ticket volumes, and feedback), we have isolated key churn indicators that can be preemptively addressed.</p>
+                            <div class="summary-stats-bullets">
+                                <div class="bullet-stat">
+                                    <span class="bullet-val text-accent-cyan" id="insight-stat-mrr">$0.0K</span>
+                                    <span class="bullet-lbl">Active Monthly Recurring Revenue</span>
+                                </div>
+                                <div class="bullet-stat">
+                                    <span class="bullet-val text-accent-green" id="insight-stat-ltv">$0.00</span>
+                                    <span class="bullet-lbl">Average Customer LTV</span>
+                                </div>
+                                <div class="bullet-stat">
+                                    <span class="bullet-val text-accent-red" id="insight-stat-churn">0.0%</span>
+                                    <span class="bullet-lbl">Overall Churn Rate</span>
+                                </div>
+                                <div class="bullet-stat">
+                                    <span class="bullet-val" id="insight-stat-active">0,000</span>
+                                    <span class="bullet-lbl">Active Subscribers</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Insight 1: Drivers -->
+                    <div class="glass-panel insight-card">
+                        <div class="insight-header">
+                            <i class="fa-solid fa-gauge-high text-accent-cyan"></i>
+                            <h2>Key Retention Drivers</h2>
+                        </div>
+                        <div class="insight-body">
+                            <h3>Usage Frequency & Support Ticket Health</h3>
+                            <p>Customer engagement is the strongest shield against churn. Active customers log in an average of <strong>19.2 times/month</strong>, compared to just <strong>9.4 times/month</strong> for customers who churned. Furthermore, there is a clear threshold where support interactions go from healthy to critical.</p>
+                            <p>Customers with <strong>0 to 2 support tickets</strong> show incredibly low churn (&lt;5%). However, once ticket volumes exceed <strong>5 tickets</strong>, churn rates spike to over <strong>55%</strong>, and exceed <strong>80%</strong> for customers with 10+ tickets. This indicates that customers are leaving out of frustration with unresolved product issues.</p>
+                        </div>
+                    </div>
+
+                    <!-- Insight 2: Contract Types -->
+                    <div class="glass-panel insight-card">
+                        <div class="insight-header">
+                            <i class="fa-solid fa-file-contract text-accent-amber"></i>
+                            <h2>Contract & Plan Vulnerability</h2>
+                        </div>
+                        <div class="insight-body">
+                            <h3>The Monthly vs. Annual Gap</h3>
+                            <p>Billing intervals represent our biggest structural retention driver. Monthly contracts suffer from a massive churn rate of nearly <strong>42%</strong>, compared to a stable <strong>12%</strong> churn rate for customers on annual billing. Annual billing provides a 12-month runway for customer onboarding and habit formation, whereas monthly billing creates an active "buy/cancel" decision point every 30 days.</p>
+                            
+                            <h3>Plan Breakdown</h3>
+                            <p><strong>Basic Plan</strong> users represent our highest-risk segment (approx. 38% churn), driven by price sensitivity and lower product adoption. <strong>Enterprise Plan</strong> accounts are much more stable (approx. 14% churn), indicating strong organizational integration, but require high customer support investment.</p>
+                        </div>
+                    </div>
+
+                    <!-- Recommendations -->
+                    <div class="glass-panel insight-card span-all strategic-card">
+                        <div class="insight-header">
+                            <i class="fa-solid fa-bullseye text-accent-green"></i>
+                            <h2>Strategic Retention Recommendations</h2>
+                        </div>
+                        <div class="recommendations-container">
+                            <div class="rec-item">
+                                <div class="rec-icon"><i class="fa-solid fa-award"></i></div>
+                                <div class="rec-details">
+                                    <h3>1. Launch Annual Upgrade Campaigns</h3>
+                                    <p>Since annual contracts exhibit <strong>70% lower churn</strong> than monthly contracts, we should target active monthly subscribers with promotional incentives (e.g., 2 months free) to transition to annual plans. Focus campaigns specifically on cohorts in their 2nd and 3rd months, where the initial onboarding excitement fades.</p>
+                                </div>
+                            </div>
+                            
+                            <div class="rec-item">
+                                <div class="rec-icon"><i class="fa-solid fa-bell"></i></div>
+                                <div class="rec-details">
+                                    <h3>2. Deploy "High Support Ticket" Priority Alerting</h3>
+                                    <p>Establish automated notifications in our CRM when an account reaches <strong>4 support tickets</strong> within a 60-day window. These accounts should be auto-routed to a dedicated Customer Success Specialist for premium support, proactive outreach, and manual account review before they reach the critical 5+ ticket threshold.</p>
+                                </div>
+                            </div>
+
+                            <div class="rec-item">
+                                <div class="rec-icon"><i class="fa-solid fa-chart-line"></i></div>
+                                <div class="rec-details">
+                                    <h3>3. Create an "Inactivity Trigger" Playbook</h3>
+                                    <p>Since low login frequency strongly correlates with churn, set up automated onboarding email sequences and product tours for accounts whose monthly logins drop below <strong>8 times</strong>. Trigger in-app guides highlighting unused high-value features for their specific plan tier.</p>
+                                </div>
+                            </div>
+
+                            <div class="rec-item">
+                                <div class="rec-icon"><i class="fa-solid fa-tags"></i></div>
+                                <div class="rec-details">
+                                    <h3>4. Address Price Sensitivity in Basic Tier</h3>
+                                    <p>Exit surveys indicate that "Competitor offered better price" is the leading reason for churn among Basic users. We should review our Basic plan feature packaging and introduce a lower-cost "Lite" tier, or add high-value features (e.g., templates, basic integrations) to the Basic plan to boost perceived value without cutting prices.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+    </div>
+
+    <!-- Load the generated data file first -->
+    <script src="data.js"></script>
+    <!-- Load dashboard application logic -->
+    <script src="app.js"></script>
+</body>
+</html>

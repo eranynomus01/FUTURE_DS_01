@@ -1,0 +1,99 @@
+{
+    "churn_reasons": [
+        {
+            "reason": "Customer service was unsatisfactory",
+            "count": 276,
+            "percentage": 0.1498
+        },
+        {
+            "reason": "Product lacks required features",
+            "count": 271,
+            "percentage": 0.1471
+        },
+        {
+            "reason": "No longer needed",
+            "count": 266,
+            "percentage": 0.1444
+        },
+        {
+            "reason": "Onboarding experience was poor",
+            "count": 264,
+            "percentage": 0.1433
+        },
+        {
+            "reason": "Competitor offered better price",
+            "count": 263,
+            "percentage": 0.1428
+        },
+        {
+            "reason": "Company went out of business / budget cuts",
+            "count": 257,
+            "percentage": 0.1395
+        },
+        {
+            "reason": "Difficult to use / poor UX",
+            "count": 245,
+            "percentage": 0.133
+        }
+    ],
+    "average_support_tickets": {
+        "active": 6.32,
+        "churned": 9.62
+    },
+    "average_usage_frequency": {
+        "active": 17.09,
+        "churned": 12.77
+    },
+    "churn_by_support_tickets": [
+        {
+            "segment": "0-2 tickets",
+            "total_customers": 967,
+            "churned_customers": 145,
+            "churn_rate": 0.1499
+        },
+        {
+            "segment": "10+ tickets",
+            "total_customers": 1908,
+            "churned_customers": 1049,
+            "churn_rate": 0.5498
+        },
+        {
+            "segment": "3-5 tickets",
+            "total_customers": 898,
+            "churned_customers": 219,
+            "churn_rate": 0.2439
+        },
+        {
+            "segment": "6-9 tickets",
+            "total_customers": 1227,
+            "churned_customers": 429,
+            "churn_rate": 0.3496
+        }
+    ],
+    "churn_by_usage_frequency": [
+        {
+            "segment": "High Usage (16-25 logins/mo)",
+            "total_customers": 1610,
+            "churned_customers": 487,
+            "churn_rate": 0.3025
+        },
+        {
+            "segment": "Low Usage (<5 logins/mo)",
+            "total_customers": 842,
+            "churned_customers": 455,
+            "churn_rate": 0.5404
+        },
+        {
+            "segment": "Medium Usage (6-15 logins/mo)",
+            "total_customers": 1673,
+            "churned_customers": 717,
+            "churn_rate": 0.4286
+        },
+        {
+            "segment": "Very High Usage (26+ logins/mo)",
+            "total_customers": 875,
+            "churned_customers": 183,
+            "churn_rate": 0.2091
+        }
+    ]
+}
