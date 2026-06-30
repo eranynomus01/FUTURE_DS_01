@@ -3,6 +3,9 @@ import numpy as np
 import os
 import sys
 
+# Force working directory to be the parent of this script (task_two)
+os.chdir(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
+
 print("Running pipeline integrity tests...")
 
 clean_csv_path = "data/cleaned_customer_data.csv"

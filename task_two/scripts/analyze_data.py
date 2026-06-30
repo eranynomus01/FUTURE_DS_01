@@ -3,6 +3,9 @@ import numpy as np
 import json
 import os
 
+# Force working directory to be the parent of this script (task_two)
+os.chdir(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
+
 print("Starting customer churn and retention analysis...")
 
 clean_csv_path = "data/cleaned_customer_data.csv"

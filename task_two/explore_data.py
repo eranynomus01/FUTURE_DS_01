@@ -9,9 +9,8 @@ import matplotlib.pyplot as plt
 import os
 
 # %%
-# Adjust working directory if running inside the scripts directory
-if os.path.basename(os.getcwd()) == "scripts":
-    os.chdir("..")
+# Force working directory to be the script's directory so relative paths work
+os.chdir(os.path.dirname(os.path.abspath(__file__)))
 
 # %%
 # Load the dataset

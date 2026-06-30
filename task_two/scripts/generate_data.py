@@ -3,6 +3,9 @@ import random
 import os
 from datetime import datetime, timedelta
 
+# Force working directory to be the parent of this script (task_two)
+os.chdir(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
+
 # Ensure target directory exists
 os.makedirs("data", exist_ok=True)
 
