@@ -1,0 +1,44 @@
+[
+    {
+        "segment": "Desktop",
+        "visitors": 3364,
+        "leads": 944,
+        "trials": 399,
+        "customers": 138,
+        "spend": 2333.85,
+        "cpl": 2.47,
+        "cac": 16.91,
+        "conv_visitor_to_lead": 0.2806,
+        "conv_lead_to_trial": 0.4227,
+        "conv_trial_to_customer": 0.3459,
+        "conv_overall": 0.041
+    },
+    {
+        "segment": "Mobile",
+        "visitors": 3335,
+        "leads": 570,
+        "trials": 238,
+        "customers": 86,
+        "spend": 2412.7,
+        "cpl": 4.23,
+        "cac": 28.05,
+        "conv_visitor_to_lead": 0.1709,
+        "conv_lead_to_trial": 0.4175,
+        "conv_trial_to_customer": 0.3613,
+        "conv_overall": 0.0258
+    },
+    {
+        "segment": "Tablet",
+        "visitors": 3301,
+        "leads": 747,
+        "trials": 301,
+        "customers": 99,
+        "spend": 2319.2,
+        "cpl": 3.1,
+        "cac": 23.43,
+        "conv_visitor_to_lead": 0.2263,
+        "conv_lead_to_trial": 0.4029,
+        "conv_trial_to_customer": 0.3289,
+        "conv_overall": 0.03
+    }
+]

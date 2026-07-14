@@ -1,0 +1,468 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NexusFunnel Marketing & Lead Analytics Dashboard</title>
+    <!-- Google Fonts: Outfit -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <!-- FontAwesome for Premium Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Chart.js CDN -->
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="app-container">
+        <!-- Sidebar Navigation -->
+        <aside class="sidebar">
+            <div class="brand">
+                <div class="brand-logo">
+                    <i class="fa-solid fa-filter-list"></i>
+                    <span>NEXUS<span class="highlight">FUNNEL</span></span>
+                </div>
+            </div>
+            <nav class="sidebar-nav">
+                <ul>
+                    <li class="active" data-tab="overview"><a href="#"><i class="fa-solid fa-chart-column"></i> Overview</a></li>
+                    <li data-tab="acquisition"><a href="#"><i class="fa-solid fa-money-bill-trend-up"></i> Acquisition Performance</a></li>
+                    <li data-tab="dropoffs"><a href="#"><i class="fa-solid fa-arrow-down-up-lock"></i> Stage Drop-offs</a></li>
+                    <li data-tab="explorer"><a href="#"><i class="fa-solid fa-database"></i> Session Explorer</a></li>
+                    <li data-tab="insights"><a href="#"><i class="fa-solid fa-lightbulb"></i> Insights & Strategy</a></li>
+                </ul>
+            </nav>
+            <div class="sidebar-footer">
+                <div class="user-profile">
+                    <div class="avatar"><i class="fa-solid fa-bullseye"></i></div>
+                    <div class="user-info">
+                        <span class="user-name">Growth Suite</span>
+                        <span class="user-role">Marketing Analyst</span>
+                    </div>
+                </div>
+            </div>
+        </aside>
+
+        <!-- Main Content Area -->
+        <main class="main-content">
+            <!-- Top Navigation / Header -->
+            <header class="header">
+                <div class="header-left">
+                    <h1>Marketing & Lead Funnel Intelligence</h1>
+                    <p class="subtitle">Session tracking, multi-channel attribution, stage-by-stage leakage, and customer acquisition costs</p>
+                </div>
+                
+                <!-- Dynamic Filters Panel -->
+                <div class="filters-panel">
+                    <div class="filter-item">
+                        <label for="filter-source"><i class="fa-solid fa-globe"></i> Traffic Source</label>
+                        <select id="filter-source">
+                            <option value="all">All Sources</option>
+                            <option value="Organic Search">Organic Search</option>
+                            <option value="Paid Search">Paid Search</option>
+                            <option value="Paid Social">Paid Social</option>
+                            <option value="Email">Email</option>
+                            <option value="Referral">Referral</option>
+                            <option value="Direct">Direct</option>
+                        </select>
+                    </div>
+                    <div class="filter-item">
+                        <label for="filter-campaign"><i class="fa-solid fa-bullhorn"></i> Campaign</label>
+                        <select id="filter-campaign">
+                            <option value="all">All Campaigns</option>
+                            <option value="Winter Sale">Winter Sale</option>
+                            <option value="Spring Promo">Spring Promo</option>
+                            <option value="Retargeting Ads">Retargeting Ads</option>
+                            <option value="Brand Awareness">Brand Awareness</option>
+                            <option value="Product Launch">Product Launch</option>
+                            <option value="Newsletter Vol 12">Newsletter Vol 12</option>
+                            <option value="Uncategorized Paid Campaign">Uncategorized Paid Campaign</option>
+                            <option value="None">None (Organic/Direct)</option>
+                        </select>
+                    </div>
+                    <div class="filter-item">
+                        <label for="filter-device"><i class="fa-solid fa-laptop-mobile"></i> Device</label>
+                        <select id="filter-device">
+                            <option value="all">All Devices</option>
+                            <option value="Desktop">Desktop</option>
+                            <option value="Mobile">Mobile</option>
+                            <option value="Tablet">Tablet</option>
+                        </select>
+                    </div>
+                    <button id="reset-filters" class="btn-reset" title="Reset Filters">
+                        <i class="fa-solid fa-rotate-left"></i>
+                    </button>
+                </div>
+            </header>
+
+            <!-- Dashboard Tabs -->
+            
+            <!-- TAB 1: OVERVIEW -->
+            <section id="tab-overview" class="tab-content active">
+                <!-- KPI Scorecard -->
+                <div class="kpi-grid">
+                    <div class="kpi-card" id="kpi-visitors">
+                        <div class="kpi-header">
+                            <span class="kpi-title">Total Visitors</span>
+                            <div class="kpi-icon visitors"><i class="fa-solid fa-users"></i></div>
+                        </div>
+                        <div class="kpi-value">0</div>
+                        <div class="kpi-footer">
+                            <span class="trend neutral" id="kpi-visitors-sub">Sessions tracked</span>
+                        </div>
+                        <div class="glow-effect"></div>
+                    </div>
+                    
+                    <div class="kpi-card" id="kpi-spend">
+                        <div class="kpi-header">
+                            <span class="kpi-title">Estimated Ad Spend</span>
+                            <div class="kpi-icon spend"><i class="fa-solid fa-credit-card"></i></div>
+                        </div>
+                        <div class="kpi-value">$0.00</div>
+                        <div class="kpi-footer">
+                            <span class="trend positive" id="kpi-spend-sub">Paid media channels</span>
+                        </div>
+                        <div class="glow-effect"></div>
+                    </div>
+
+                    <div class="kpi-card" id="kpi-cac">
+                        <div class="kpi-header">
+                            <span class="kpi-title">Avg Acquisition Cost (CAC)</span>
+                            <div class="kpi-icon cac"><i class="fa-solid fa-money-bill-wave"></i></div>
+                        </div>
+                        <div class="kpi-value">$0.00</div>
+                        <div class="kpi-footer">
+                            <span class="trend neutral" id="kpi-cac-sub">per customer</span>
+                        </div>
+                        <div class="glow-effect"></div>
+                    </div>
+
+                    <div class="kpi-card" id="kpi-conversion">
+                        <div class="kpi-header">
+                            <span class="kpi-title">Overall Conversion</span>
+                            <div class="kpi-icon conversion"><i class="fa-solid fa-arrow-up-right-dots"></i></div>
+                        </div>
+                        <div class="kpi-value">0.00%</div>
+                        <div class="kpi-footer">
+                            <span class="trend neutral" id="kpi-conversion-sub">Visitor-to-Customer</span>
+                        </div>
+                        <div class="glow-effect"></div>
+                    </div>
+                </div>
+
+                <!-- Primary Analytical Funnel & Device breakdown -->
+                <div class="chart-row primary-row">
+                    <!-- Funnel Progress Chart -->
+                    <div class="chart-card glass-panel flex-2">
+                        <div class="card-header">
+                            <h2>Funnel Conversion Progression</h2>
+                            <p class="card-desc">Visual progression of user conversion rates and retention counts from start to subscription</p>
+                        </div>
+                        <div class="chart-container">
+                            <canvas id="chart-funnel"></canvas>
+                        </div>
+                    </div>
+                    
+                    <!-- Device Shares -->
+                    <div class="chart-card glass-panel flex-1">
+                        <div class="card-header">
+                            <h2>Device Distribution</h2>
+                            <p class="card-desc">Contribution of Desktop, Mobile, and Tablet to total session traffic</p>
+                        </div>
+                        <div class="chart-container donut">
+                            <canvas id="chart-device"></canvas>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Secondary Row -->
+                <div class="chart-row secondary-row">
+                    <!-- Monthly Funnel Trend Chart -->
+                    <div class="chart-card glass-panel flex-2">
+                        <div class="card-header">
+                            <h2>Monthly Funnel Conversions Trend</h2>
+                            <p class="card-desc">Progress tracking of monthly sessions, leads, trials, and customer sign-ups</p>
+                        </div>
+                        <div class="chart-container">
+                            <canvas id="chart-trends"></canvas>
+                        </div>
+                    </div>
+
+                    <!-- Stage Retention summary rates -->
+                    <div class="chart-card glass-panel flex-1">
+                        <div class="card-header">
+                            <h2>Stage Transition Rates</h2>
+                            <p class="card-desc">Visitor → Lead, Lead → Trial, and Trial → Customer progression efficiency</p>
+                        </div>
+                        <div class="chart-container">
+                            <canvas id="chart-transitions"></canvas>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- TAB 2: ACQUISITION PERFORMANCE -->
+            <section id="tab-acquisition" class="tab-content">
+                <div class="chart-row primary-row">
+                    <!-- Channel Conversions -->
+                    <div class="chart-card glass-panel flex-1">
+                        <div class="card-header">
+                            <h2>Conversion Rate by Traffic Channel</h2>
+                            <p class="card-desc">Overall visitor-to-customer conversion percentage per acquisition source</p>
+                        </div>
+                        <div class="chart-container">
+                            <canvas id="chart-channel-conv"></canvas>
+                        </div>
+                    </div>
+
+                    <!-- CAC Comparison -->
+                    <div class="chart-card glass-panel flex-1">
+                        <div class="card-header">
+                            <h2>Customer Acquisition Cost (CAC) by Channel</h2>
+                            <p class="card-desc">Cost efficiency per paying customer acquired (Spend / Customers)</p>
+                        </div>
+                        <div class="chart-container">
+                            <canvas id="chart-channel-cac"></canvas>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="chart-row secondary-row">
+                    <!-- Top Campaign Performance Grid -->
+                    <div class="chart-card glass-panel flex-3">
+                        <div class="card-header">
+                            <h2>Campaign Cost & Conversion Matrix</h2>
+                            <p class="card-desc">Key performance indicators ranked across ad campaigns</p>
+                        </div>
+                        <div class="table-container header-sticky">
+                            <table class="data-table" id="table-campaigns">
+                                <thead>
+                                    <tr>
+                                        <th>Campaign Name</th>
+                                        <th class="num-col">Sessions</th>
+                                        <th class="num-col">Leads</th>
+                                        <th class="num-col">Trials</th>
+                                        <th class="num-col">Customers</th>
+                                        <th class="num-col">Spend ($)</th>
+                                        <th class="num-col">CPL ($)</th>
+                                        <th class="num-col">CAC ($)</th>
+                                        <th class="num-col">Conv Rate (%)</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <!-- Dynamic campaign details -->
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+
+                    <!-- Device Conversions -->
+                    <div class="chart-card glass-panel flex-1">
+                        <div class="card-header">
+                            <h2>Overall Conversion by Device</h2>
+                            <p class="card-desc">Comparison of visitor-to-customer conversion rates by screen type</p>
+                        </div>
+                        <div class="chart-container">
+                            <canvas id="chart-device-conv"></canvas>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- TAB 3: STAGE DROPOFFS -->
+            <section id="tab-dropoffs" class="tab-content">
+                <div class="chart-row primary-row">
+                    <!-- Drop-off volume and rates -->
+                    <div class="chart-card glass-panel flex-2">
+                        <div class="card-header">
+                            <h2>Funnel Leakage: Stage Drop-off Rates (%)</h2>
+                            <p class="card-desc">Percent of users who dropped out of the funnel at each level</p>
+                        </div>
+                        <div class="chart-container">
+                            <canvas id="chart-dropoff-rates"></canvas>
+                        </div>
+                    </div>
+
+                    <!-- Funnel leakage metrics card -->
+                    <div class="chart-card glass-panel flex-1">
+                        <div class="card-header">
+                            <h2>Funnel Leakage Summary</h2>
+                            <p class="card-desc">Quantified stage drop-offs and leak points</p>
+                        </div>
+                        <div class="dropoffs-metrics-container" id="dropoffs-summary-container">
+                            <!-- Dynamic summary rows -->
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- TAB 4: SESSION EXPLORER -->
+            <section id="tab-explorer" class="tab-content">
+                <div class="glass-panel search-panel">
+                    <div class="explorer-toolbar">
+                        <div class="search-box">
+                            <i class="fa-solid fa-magnifying-glass"></i>
+                            <input type="text" id="explorer-search" placeholder="Search session ID, User ID, campaigns...">
+                        </div>
+                        
+                        <div class="filter-controls-group">
+                            <select id="explorer-filter-stage" class="explorer-select">
+                                <option value="all">All Stages Reached</option>
+                                <option value="Customer">Customers Only (Purchased)</option>
+                                <option value="Trial">Trial Started Only</option>
+                                <option value="Lead">Leads Only (Submitted Form)</option>
+                                <option value="Visitor">Visitors Only (Session Start)</option>
+                            </select>
+                            <select id="explorer-filter-source" class="explorer-select">
+                                <option value="all">All Channels</option>
+                                <option value="Organic Search">Organic Search</option>
+                                <option value="Paid Search">Paid Search</option>
+                                <option value="Paid Social">Paid Social</option>
+                                <option value="Email">Email</option>
+                                <option value="Referral">Referral</option>
+                                <option value="Direct">Direct</option>
+                            </select>
+                        </div>
+                        
+                        <div class="toolbar-stats">
+                            Showing <span id="explorer-row-count">0</span> sessions
+                        </div>
+                    </div>
+                    
+                    <div class="table-container main-explorer-table-container">
+                        <table class="data-table" id="table-explorer">
+                            <thead>
+                                <tr>
+                                    <th data-sort="session_id" class="sortable">Session ID <i class="fa-solid fa-sort"></i></th>
+                                    <th>User ID</th>
+                                    <th>Source</th>
+                                    <th>Campaign</th>
+                                    <th>Device</th>
+                                    <th data-sort="session_start" class="sortable">Session Start <i class="fa-solid fa-sort"></i></th>
+                                    <th>Lead Form Submitted</th>
+                                    <th>Trial Started</th>
+                                    <th>Subscription Purchased</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <!-- Dynamic session details -->
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </section>
+
+            <!-- TAB 5: INSIGHTS & STRATEGY -->
+            <section id="tab-insights" class="tab-content">
+                <div class="insights-grid">
+                    <!-- Exec Summary -->
+                    <div class="glass-panel insight-card span-all">
+                        <div class="insight-header">
+                            <i class="fa-solid fa-filter-list text-accent-cyan"></i>
+                            <h2>Marketing Funnel Performance Insights</h2>
+                        </div>
+                        <div class="insight-body">
+                            <p>An in-depth review of our digital marketing funnel and campaign tracking data reveals key optimization opportunities to drive growth and reduce client acquisition costs. During the six-month analysis window (Jan-Jun 2026), our traffic sessions converted to leads at a stable rate. However, substantial friction points remain in the middle of the funnel, and high cost-per-click values on specific ad platforms have resulted in excessive Customer Acquisition Costs (CAC).</p>
+                            <div class="summary-stats-bullets">
+                                <div class="bullet-stat">
+                                    <span class="bullet-val text-accent-cyan" id="insight-stat-visitors">0,000</span>
+                                    <span class="bullet-lbl">Total Website Visitors</span>
+                                </div>
+                                <div class="bullet-stat">
+                                    <span class="bullet-val text-accent-green" id="insight-stat-conversion">0.0%</span>
+                                    <span class="bullet-lbl">Visitor-to-Customer Rate</span>
+                                </div>
+                                <div class="bullet-stat">
+                                    <span class="bullet-val text-accent-red" id="insight-stat-cac">$0.00</span>
+                                    <span class="bullet-lbl">Average CAC</span>
+                                </div>
+                                <div class="bullet-stat">
+                                    <span class="bullet-val" id="insight-stat-spend">$0.0K</span>
+                                    <span class="bullet-lbl">Paid Campaigns Spend</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Insight 1: Friction Points -->
+                    <div class="glass-panel insight-card">
+                        <div class="insight-header">
+                            <i class="fa-solid fa-triangle-exclamation text-accent-red"></i>
+                            <h2>Friction Hotspots & Funnel Leakage</h2>
+                        </div>
+                        <div class="insight-body">
+                            <h3>Friction Point A: The Lead-to-Trial Gap</h3>
+                            <p>The highest drop-off rate occurs between **Lead Form Submitted** and **Trial Started**. Nearly **60% of our leads** fail to initiate a free trial, representing a major exit point. This friction indicates that our trial setup steps might be too demanding, or that our lead form captures high-level interest but lacks clear trial sign-up pathways.</p>
+                            
+                            <h3>Friction Point B: Mobile Device Conversion Lag</h3>
+                            <p>While Mobile devices represent over **40% of website traffic**, their overall conversion rate is **less than half** that of Desktop. Mobile visitors drop off aggressively during lead form submissions, highlighting mobile form friction, slow page loading, or poor user experience on mobile screens.</p>
+                        </div>
+                    </div>
+
+                    <!-- Insight 2: Channel Quality -->
+                    <div class="glass-panel insight-card">
+                        <div class="insight-header">
+                            <i class="fa-solid fa-money-bill-trend-up text-accent-cyan"></i>
+                            <h2>Channel & Spend Efficiency</h2>
+                        </div>
+                        <div class="insight-body">
+                            <h3>Paid Social vs. Paid Search Costs</h3>
+                            <p>Our **Paid Search** campaigns operate with a high CAC (approx. $80+ per customer) compared to **Paid Social** (approx. $50+). While Paid Search captures active intent, high competitive bidding has escalated click costs. Paid Social retargeting campaigns generate high trial sign-ups with much better spend efficiency.</p>
+                            
+                            <h3>High-Quality Organic & Email Channels</h3>
+                            <p>Our **Email** newsletter conversions are incredibly strong (approx. 4.5% overall visitor-to-customer rate) with zero click costs. Similarly, **Organic Search** provides high-intent traffic with a solid conversion rate, indicating that SEO and content marketing represent highly lucrative areas for further resource allocation.</p>
+                        </div>
+                    </div>
+
+                    <!-- Recommendations -->
+                    <div class="glass-panel insight-card span-all strategic-card">
+                        <div class="insight-header">
+                            <i class="fa-solid fa-bullseye text-accent-green"></i>
+                            <h2>Strategic Conversion Recommendations</h2>
+                        </div>
+                        <div class="recommendations-container">
+                            <div class="rec-item">
+                                <div class="rec-icon"><i class="fa-solid fa-mobile-screen-button"></i></div>
+                                <div class="rec-details">
+                                    <h3>1. Implement One-Click Mobile Form Submission</h3>
+                                    <p>Mobile conversion rates lag significantly behind desktop. We recommend streamlining mobile forms by reducing inputs to <strong>2 fields</strong> (Name and Email), and integrating Google and Apple single sign-on (SSO) to bypass form fatigue and immediately capture leads.</p>
+                                </div>
+                            </div>
+                            
+                            <div class="rec-item">
+                                <div class="rec-icon"><i class="fa-solid fa-envelope-open-text"></i></div>
+                                <div class="rec-details">
+                                    <h3>2. Deploy Trial Activation Email Sequences</h3>
+                                    <p>Since 60% of leads drop off before starting a trial, set up automated email sequences triggered <strong>1 hour and 24 hours</strong> post-lead submission. Highlight trial benefits, include case studies, and provide a direct link to start the trial with pre-filled login credentials.</p>
+                                </div>
+                            </div>
+
+                            <div class="rec-item">
+                                <div class="rec-icon"><i class="fa-solid fa-arrows-split-up-and-left"></i></div>
+                                <div class="rec-details">
+                                    <h3>3. Shift Budget to Social Retargeting & Email campaigns</h3>
+                                    <p>Our ad spend analysis shows Paid Social retargeting converts trials to customers at a much lower CAC than Paid Search. Reallocate <strong>15-20% of search ad spend</strong> into paid social retargeting ads, specifically targeting users who submitted a lead form but did not start a trial.</p>
+                                </div>
+                            </div>
+
+                            <div class="rec-item">
+                                <div class="rec-icon"><i class="fa-solid fa-rocket"></i></div>
+                                <div class="rec-details">
+                                    <h3>4. Introduce Self-Service Product Tours</h3>
+                                    <p>To optimize the Trial-to-Customer conversion (currently at 30%), launch interactive self-service product walkthroughs (like Shepherd.js or Userguiding) upon trial sign-up. Guiding trials to their "Aha!" moment within the first 3 sessions will significantly improve checkout conversion.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+    </div>
+
+    <!-- Load the generated data file first -->
+    <script src="data.js"></script>
+    <!-- Load dashboard application logic -->
+    <script src="app.js"></script>
+</body>
+</html>

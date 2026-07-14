@@ -1,0 +1,13 @@
+{
+    "visitors": 10000,
+    "leads": 2261,
+    "trials": 938,
+    "customers": 323,
+    "total_spend": 7065.75,
+    "cpl": 3.13,
+    "cac": 21.88,
+    "conv_visitor_to_lead": 0.2261,
+    "conv_lead_to_trial": 0.4149,
+    "conv_trial_to_customer": 0.3443,
+    "conv_overall": 0.0323
+}

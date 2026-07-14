@@ -1,0 +1,14 @@
+{
+    "visitor_to_lead": {
+        "dropoff_volume": 7739,
+        "dropoff_rate": 0.7739
+    },
+    "lead_to_trial": {
+        "dropoff_volume": 1323,
+        "dropoff_rate": 0.5851
+    },
+    "trial_to_customer": {
+        "dropoff_volume": 615,
+        "dropoff_rate": 0.6557
+    }
+}
